@@ -1,0 +1,39 @@
+{
+    "carrers": [
+        {
+            "id": 1,
+            "title": "Ing en sistemas UTN",
+            "color": "bg-red-400"
+        },
+        {
+            "id": 2,
+            "title": "Traductorado Lenguas Vivas",
+            "color": "bg-yellow-400"
+        },
+        {
+            "id": 3,
+            "title": "Ing Industrial UTN",
+            "color": "bg-green-500"
+        },
+        {
+            "id": 4,
+            "title": "Ciencias de la computacion UBA",
+            "color": "bg-violet-500"
+        },
+        {
+            "id": 5,
+            "title": "Medicina UBA",
+            "color": "bg-pink-400"
+        },
+        {
+            "id": 6,
+            "title": "Diseño UX",
+            "color": "bg-amber-800"
+        },
+        {
+            "id": 7,
+            "title": "Abogacia",
+            "color": "bg-teal-500"
+        }
+    ]
+}
