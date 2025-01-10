@@ -2,7 +2,7 @@
 
 import React from 'react'
 
-const ListViewCarrer = (props:any) => {
+const ListViewCareer = (props:any) => {
 
     return (
         <div className="bg-slate-300 w-full p-2 flex flex-col divide-y-2 divide-gray-400">
@@ -11,4 +11,4 @@ const ListViewCarrer = (props:any) => {
     )
 }
 
-export default ListViewCarrer
+export default ListViewCareer

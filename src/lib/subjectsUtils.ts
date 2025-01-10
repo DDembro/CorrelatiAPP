@@ -1,18 +1,7 @@
 // Tipos usados para las funciones
-interface Subject {
-    sid: string;
-    index: number;
-    info: {
-        year: number;
-        altname: string;
-        correlativities: Correlativities;
-    };
-    personal: {
-        isPromoted: boolean;
-        isApproved: boolean;
-        isRegularized: boolean;
-    };
-}
+
+import { Subject } from "@/types/carrer-view-types";
+
 
 interface Correlativities {
     regularized: string[];

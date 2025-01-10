@@ -23,8 +23,8 @@
                 }
             },
             "personal": {
-                "isRegularized": true,
-                "isApproved": true,
+                "isRegularized": false,
+                "isApproved": false,
                 "isPromoted": false,
                 "qualification": 0
             }
@@ -46,7 +46,7 @@
                 }
             },
             "personal": {
-                "isRegularized": true,
+                "isRegularized": false,
                 "isApproved": false,
                 "isPromoted": false,
                 "qualification": 0
@@ -69,8 +69,8 @@
                 }
             },
             "personal": {
-                "isRegularized": true,
-                "isApproved": true,
+                "isRegularized": false,
+                "isApproved": false,
                 "isPromoted": false,
                 "qualification": 0
             }
@@ -92,8 +92,8 @@
                 }
             },
             "personal": {
-                "isRegularized": true,
-                "isApproved": true,
+                "isRegularized": false,
+                "isApproved": false,
                 "isPromoted": false,
                 "qualification": 0
             }
@@ -115,8 +115,8 @@
                 }
             },
             "personal": {
-                "isRegularized": true,
-                "isApproved": true,
+                "isRegularized": false,
+                "isApproved": false,
                 "isPromoted": false,
                 "qualification": 0
             }
@@ -161,8 +161,8 @@
                 }
             },
             "personal": {
-                "isRegularized": true,
-                "isApproved": true,
+                "isRegularized": false,
+                "isApproved": false,
                 "isPromoted": false,
                 "qualification": 0
             }
@@ -184,8 +184,8 @@
                 }
             },
             "personal": {
-                "isRegularized": true,
-                "isApproved": true,
+                "isRegularized": false,
+                "isApproved": false,
                 "isPromoted": false,
                 "qualification": 0
             }
@@ -253,8 +253,8 @@
                 }
             },
             "personal": {
-                "isRegularized": true,
-                "isApproved": true,
+                "isRegularized": false,
+                "isApproved": false,
                 "isPromoted": false,
                 "qualification": 0
             }
@@ -276,8 +276,8 @@
                 }
             },
             "personal": {
-                "isRegularized": true,
-                "isApproved": true,
+                "isRegularized": false,
+                "isApproved": false,
                 "isPromoted": false,
                 "qualification": 0
             }
@@ -667,8 +667,8 @@
                 }
             },
             "personal": {
-                "isRegularized": true,
-                "isApproved": true,
+                "isRegularized": false,
+                "isApproved": false,
                 "isPromoted": false,
                 "qualification": 0
             }

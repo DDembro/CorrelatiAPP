@@ -1,0 +1,42 @@
+[
+    {
+        "id":1,
+        "name":"Ingeniería en Sistemas",
+        "college":"UTN",
+        "description":"Plan 2023 k23",
+        "color":"bg-gradient-to-r from-blue-600 to-blue-400",
+        "file":"ing_sistemas_utn.json"
+    },
+    {
+        "id":2,
+        "name":"Traductorado Ingles",
+        "college":"Lenguas Vivas",
+        "description":"Plan 2023 k23",
+        "color":"bg-gradient-to-r from-green-600 to-green-400",
+        "file":"tradu_ingles_lenguas.json"
+    },
+    {
+        "id":3,
+        "name":"Medicina",
+        "college":"UBA",
+        "description":"Plan 2023 k23",
+        "color":"bg-gradient-to-r from-yellow-600 to-yellow-400",
+        "file":"medicina_uba.json"
+    },
+    {
+        "id":4,
+        "name":"Abogacia",
+        "college":"UBA",
+        "description":"Plan 2023 k23",
+        "color":"bg-gradient-to-r from-red-600 to-red-400",
+        "file":"abogacia_uba.json"
+    },
+    {
+        "id":5,
+        "name":"Psicologia",
+        "college":"UBA",
+        "description":"Plan 2023 k23",
+        "color":"bg-gradient-to-r from-teal-600 to-teal-400",
+        "file":"psicologia_uba.json"
+    }
+]
