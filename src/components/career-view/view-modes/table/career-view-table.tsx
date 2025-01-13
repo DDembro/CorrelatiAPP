@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useEffect, useRef, useState } from 'react'
-import { ContextMenuState, Subject } from '@/types/carrer-view-types'
+import { ContextMenuState, Subject } from '@/types/career-view-types'
 import renderCareerViewTable from './career-render-table'
 import { hideCorrelativities } from '@/lib/subjectsUtils'
 
@@ -82,7 +82,7 @@ const TableViewCareer = ({ carrerData }: any) => {
     
 
     return (
-        <div className="bg-slate-300 p-2 flex divide-x-2 divide-gray-400 justify-center">
+        <div className="p-2 flex divide-x-2 divide-gray-400 justify-center">
             {renderCareerViewTable(carrerData, handleOnContextMenu, contextMenuRef, contextMenu)}
         </div>
     )

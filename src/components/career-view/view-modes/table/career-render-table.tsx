@@ -1,9 +1,12 @@
 import React from "react";
+import { CareerData, Subject } from "@/types/career-view-types";
+
 import { initiateSubjectsDictionary, showCorrelativities, sortSubjects } from "@/lib/subjectsUtils";
 import ContextMenu from "../../../context-menu";
-import renderSubjects from "../../carrer-render-subjects";
+import renderSubjects from "./carrer-render-subjects-table";
+import { changeStatus } from "@/lib/careerEditUtils";
 
-const renderCareerViewTable = (carrerData:any, handleOnContextMenu:any, contextMenuRef:any, contextMenu:any) => {
+const renderCareerViewTable = (carrerData:CareerData, handleOnContextMenu:any, contextMenuRef:any, contextMenu:any) => {
     const title = carrerData.title
     const author = carrerData.author
     const years = carrerData.years
@@ -40,22 +43,22 @@ const renderCareerViewTable = (carrerData:any, handleOnContextMenu:any, contextM
             buttons={[
                 {
                     text: "Marcar No Cursada",
-                    onClick: () => alert("Sin cursar"),
+                    onClick: () => changeStatus(carrerData, contextMenu.subjectClicked, 0),
                     isSpacer: false
                 },
                 {
                     text: "Marcar Regularizada",
-                    onClick: () => alert("Regularizada"),
+                    onClick: () => changeStatus(carrerData, contextMenu.subjectClicked, 1),
                     isSpacer: false
                 },
                 {
                     text: "Marcar Aprobada",
-                    onClick: () => alert("Aprobada"),
+                    onClick: () => changeStatus(carrerData, contextMenu.subjectClicked, 2),
                     isSpacer: false
                 },
                 {
                     text: "Marcar Promocionada",
-                    onClick: () => alert("Promocionada"),
+                    onClick: () => changeStatus(carrerData, contextMenu.subjectClicked, 3),
                     isSpacer: false
                 },
                 {

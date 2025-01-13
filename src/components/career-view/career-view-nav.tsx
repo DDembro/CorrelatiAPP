@@ -1,28 +1,41 @@
 import React from "react";
 import { showAllSubjectInfo, hideAllSubjectInfo, initiateSubjectsDictionary } from "@/lib/subjectsUtils";
+import Link from "next/link";
+import { downloadCareerData, saveLocalCareerData } from "@/lib/careerEditUtils";
 
-const CareerViewNav = ({ carrerData, viewMode, setViewMode }: any) => {
-    if (!carrerData) {
+const CareerViewNav = ({ careerData, viewMode, setViewMode }: any) => {
+    if (!careerData) {
         return <></>;
     }
 
+    // Al salir de la vista de una carrera mediante el boton
+    const returnAction = () => {
+        sessionStorage.removeItem("careerData");
+        if(!confirm("Desea salir de esta Carrera? todo cambio no Descargado se perdera"))
+            return;
+        window.location.href = '/career-view'
+    };
+
+    // Settea el sessionStorage
+    saveLocalCareerData(careerData);
+
     return (
-        <div className="p-4 flex items-center bg-gray-100 rounded-lg shadow-md">
+        <div className="p-4 flex items-center bg-gray-100 rounded-lg shadow-md text-white">
             <button
-                onClick={() => window.location.href = '/career-view'}
-                className="bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium px-4 py-2 mx-2 rounded-md shadow hover:from-blue-600 hover:to-blue-700 active:shadow-inner focus:outline-none"
+                onClick={() => returnAction()}
+                className="bg-blue-500 font-medium px-4 py-2 mx-2 rounded-md shadow hover:bg-blue-700 active:shadow-inner focus:outline-none"
             >
-                Volver
+                Salir
             </button>
 
             <p className="mx-6 text-xl font-semibold text-gray-700 truncate">
-                Viendo: {carrerData.title}
+                Viendo: {careerData.title}
             </p>
 
             <button
                 onClick={(e) => setViewMode(true)}
-                className={`px-4 py-2 mx-2 rounded-md shadow font-medium text-white ${
-                    viewMode ? "bg-blue-600" : "bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
+                className={`px-4 py-2 mx-2 rounded-md shadow font-medium ${
+                    viewMode ? "bg-blue-700" : "bg-blue-500 hover:bg-blue-700"
                 } focus:outline-none`}
             >
                 Tabla
@@ -30,25 +43,42 @@ const CareerViewNav = ({ carrerData, viewMode, setViewMode }: any) => {
 
             <button
                 onClick={(e) => setViewMode(false)}
-                className={`px-4 py-2 mx-2 rounded-md shadow font-medium text-white ${
-                    !viewMode ? "bg-blue-600" : "bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
+                className={`px-4 py-2 mx-2 rounded-md shadow font-medium ${
+                    !viewMode ? "bg-blue-700" : "bg-blue-500 hover:bg-blue-700"
                 } focus:outline-none`}
             >
                 Lista
             </button>
 
             <button
-                onClick={(e) => showAllSubjectInfo(initiateSubjectsDictionary(carrerData.subjects))}
-                className="bg-gradient-to-r from-green-500 to-green-600 text-white font-medium px-4 py-2 mx-2 rounded-md shadow hover:from-green-600 hover:to-green-700 focus:outline-none"
+                onClick={(e) => showAllSubjectInfo(initiateSubjectsDictionary(careerData.subjects))}
+                className="bg-green-500 font-medium px-4 py-2 mx-2 rounded-md shadow hover:bg-green-700 focus:outline-none"
             >
                 Expandir todo
             </button>
 
             <button
-                onClick={(e) => hideAllSubjectInfo(initiateSubjectsDictionary(carrerData.subjects))}
-                className="bg-gradient-to-r from-red-500 to-red-600 text-white font-medium px-4 py-2 mx-2 rounded-md shadow hover:from-red-600 hover:to-red-700 focus:outline-none"
+                onClick={(e) => hideAllSubjectInfo(initiateSubjectsDictionary(careerData.subjects))}
+                className="bg-red-500 font-medium px-4 py-2 mx-2 rounded-md shadow hover:bg-red-700 focus:outline-none"
             >
                 Colapsar todo
+            </button>
+
+            <Link
+                href="/career-edit"
+                className="bg-blue-500 font-medium px-4 py-2 mx-2 rounded-md shadow hover:bg-blue-700 active:shadow-inner focus:outline-none"
+                onClick={() => {
+                    saveLocalCareerData(careerData);
+                }}
+            >
+                Editar
+            </Link>
+
+            <button
+                onClick={(e) => downloadCareerData(careerData)}
+                className="bg-blue-500 font-medium px-4 py-2 mx-2 rounded-md shadow hover:bg-blue-700 focus:outline-none"
+            >
+                Descargar
             </button>
         </div>
     );

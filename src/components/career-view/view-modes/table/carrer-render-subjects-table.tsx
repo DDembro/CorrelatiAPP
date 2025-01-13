@@ -6,7 +6,7 @@ import {
     formatModality,
     showSubjectInfo,
 } from "@/lib/subjectsUtils";
-import { Subject } from "../../types/carrer-view-types";
+import { Subject } from "../../../../types/career-view-types";
 
 const renderSubjects = (subjectArr: any, dictionary: any, handleOnContextMenu: any) => {
     let subjectsCards: React.JSX.Element[] = [];
@@ -26,18 +26,20 @@ const renderSubjects = (subjectArr: any, dictionary: any, handleOnContextMenu: a
                 id={`subject-${subject.sid}`}
                 onClick={() => showSubjectInfo(subject.sid)}
                 onContextMenu={(e) => handleOnContextMenu(e, subject)}
-                className="rounded-lg shadow-md bg-slate-50 hover:shadow-lg transform transition-all duration-300 my-4"
+                className="rounded-sm shadow-md bg-slate-50 hover:shadow-lg transform transition-all duration-300 my-4"
             >
                 {/* Título */}
                 <div
-                    className={`text-center py-1 rounded-lg font-semibold text-white ${
-                        personal.isApproved
-                            ? "bg-green-600"
-                            : personal.isRegularized
-                            ? "bg-yellow-500"
+                    className={`text-center py-1 rounded-sm font-semibold text-white px-1 ${
+                        personal.status === 3
+                            ? "bg-green-700" // promoted
+                            : personal.status === 2
+                            ? "bg-green-600" // Approved
+                            : personal.status === 1
+                            ? "bg-yellow-500" // Regularized
                             : canEnroll
-                            ? "bg-indigo-500"
-                            : "bg-stone-400"
+                            ? "bg-indigo-500" // Can enroll
+                            : "bg-stone-400"  // Default
                     }`}
                 >
                     <h3 className="text-lg">{info.name}</h3>

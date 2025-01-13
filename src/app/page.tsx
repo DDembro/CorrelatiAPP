@@ -1,11 +1,14 @@
 import Link from "next/link";
 
+import "../styles/main-page.css"
+
+
 export default function MainPage() {
   return (
-    <div className="p-6 flex flex-col items-center justify-center text-gray-800">
-      <div className="bg-slate-50 rounded-lg w-3/4 shadow-lg p-6 text-center">
+    <div className="main-container">
+      <div className="content-container">
         {/* Header */}
-        <h1 className="text-3xl font-bold text-indigo-600 mb-4">
+        <h1>
           Bienvenido a CorrelatiAPP<br />
           Tu Editor de Planes de Estudio<br />
           🎓

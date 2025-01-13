@@ -2,6 +2,9 @@
 
 import React from "react";
 
+import "../../styles/main-page.css"
+
+
 const TemplatePage = () => {
     // Lista de carreras con colores variados
     const careers = require('../../../public/data/careersData.json');
@@ -17,9 +20,9 @@ const TemplatePage = () => {
     };
 
     return (
-        <div className="p-6 flex flex-col items-center justify-center text-gray-800">
-            <div className="bg-slate-50 rounded-lg w-3/4 shadow-lg p-6 text-center">
-                <h1 className="text-3xl font-bold text-indigo-600 mb-4">
+        <div className="main-container">
+            <div className="content-container">
+                <h1>
                     Plantillas de Carreras
                 </h1>
                 <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">

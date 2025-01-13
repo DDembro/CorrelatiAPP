@@ -1,11 +1,13 @@
 import React from 'react';
 
+import "../../styles/main-page.css"
+
 const AboutPage = () => {
     return (
-        <div className="flex items-center justify-center p-6">
-            <div className="bg-white rounded-lg shadow-lg p-6 max-w-xl text-gray-800">
+        <div className="main-container">
+            <div className="content-container">
                 {/* Header */}
-                <h1 className="text-3xl font-bold text-indigo-600 mb-4 text-center">Sobre esta App</h1>
+                <h1>Sobre esta App</h1>
 
                 {/* Main Content */}
                 <p className="mb-4 leading-relaxed">

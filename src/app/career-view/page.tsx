@@ -1,27 +1,44 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import TableViewCareer from "@/components/career-view/view-modes/table/career-view-table";
 import ListViewCareer from "@/components/career-view/view-modes/career-view-list";
 import CareerViewNav from "@/components/career-view/career-view-nav";
 import CareerViewUpload from "@/components/career-view/career-view-upload";
+import { CareerData } from "@/types/career-view-types";
+import { getLocalCareerData, isValidCareerData } from "@/lib/careerEditUtils";
 
-const CarrerViewPage = () => {
+const CareerViewPage = () => {
     const [viewMode, setViewMode] = useState(true); // Tabla o Lista
-    const [carrerData, setCarrerData] = useState<any>(null); // Datos cargados
+    const [careerData, setCarrerData] = useState<CareerData | null>(null); // Datos cargados
 
-    const handleFileUpload = (data: string) => {
+    // Maneja la carga inicial del json
+    const handleFileUpload = (data: any) => {
         try {
-            const parsedData = JSON.parse(data); // Validar JSON
-            setCarrerData(parsedData); // Actualizar estado
+            const parsedData = JSON.parse(data);
+            if (isValidCareerData(parsedData)) {
+                setCarrerData(parsedData);
+            } else {
+                throw new Error("El archivo no es valido o esta dañado.");
+            }
         } catch (error) {
             console.error("Archivo JSON inválido", error);
-            alert("Error al cargar el archivo. Asegúrate de que sea un JSON válido.");
+            alert("El archivo no es valido o esta dañado.");
         }
     };
 
+    // Recuperar datos de sessionStorage al cargar la página
+    useEffect(() => {
+        const storedData = getLocalCareerData();
+        if (storedData) {
+            const parsedData: CareerData = JSON.parse(storedData); // Parsear el JSON almacenado
+            setCarrerData(parsedData); // Establecer en el estado
+        }
+    }, []);
+
+
     // Vista de carga mientras no hay datos cargados
-    if (!carrerData) {
+    if (!careerData) {
         return (
             <div className="p-2">
                 <CareerViewUpload onFileUpload={handleFileUpload} />
@@ -32,16 +49,16 @@ const CarrerViewPage = () => {
     // Vista de la carrera cuando se cargan datos
     return (
         <div className="p-2">
-            <CareerViewNav carrerData={carrerData} viewMode={viewMode} setViewMode={setViewMode} />
+            <CareerViewNav careerData={careerData} viewMode={viewMode} setViewMode={setViewMode} />
             <div>
                 {viewMode ? (
-                    <TableViewCareer carrerData={carrerData} />
+                    <TableViewCareer carrerData={careerData} />
                 ) : (
-                    <ListViewCareer carrerData={carrerData} />
+                    <ListViewCareer carrerData={careerData} />
                 )}
             </div>
         </div>
     );
 };
 
-export default CarrerViewPage;
+export default CareerViewPage;

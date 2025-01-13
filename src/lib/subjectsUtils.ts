@@ -1,6 +1,6 @@
 // Tipos usados para las funciones
 
-import { Subject } from "@/types/carrer-view-types";
+import { Subject } from "@/types/career-view-types";
 
 
 interface Correlativities {
@@ -43,13 +43,11 @@ export const initiateSubjectsDictionary = (subjectsArr: Subject[]): SubjectsDict
         const pers = subject.personal;
         dictionary[subject.sid] = {
             altname: subject.info.altname,
-            status: pers.isPromoted
-                ? "promoted"
-                : pers.isApproved
-                ? "approved"
-                : pers.isRegularized
-                ? "regularized"
-                : "na",
+            status: 
+                pers.status === 3 ? "promoted" :
+                pers.status === 2 ? "approved" :
+                pers.status === 1 ? "regularized" :
+                "na",
         };
     });
 
@@ -113,7 +111,7 @@ export const checkCanEnroll = (
     const personal = subject.personal;
     const correlativities = subject.info.correlativities;
 
-    if (personal.isRegularized || personal.isApproved || personal.isPromoted) {
+    if (personal.status) {
         return true;
     }
 
@@ -138,31 +136,30 @@ export const checkCanEnroll = (
 };
 
 // Muestra / oculta la información de una materia
-export const showSubjectInfo = (sid: string): void => {
+export const showSubjectInfo = (sid: string, mode?:boolean): void => {
     const subjectInfo = document.getElementById(`subject-${sid}-info`);
 
-    if (subjectInfo) {
-        subjectInfo.classList.toggle("hidden");
+    if (mode == null)
+        subjectInfo?.classList.toggle("hidden");
+    else {
+        if (mode)
+            subjectInfo?.classList.remove("hidden");
+        else
+            subjectInfo?.classList.add("hidden");
     }
 };
 
 // Muestra toda la información de las materias
 export const showAllSubjectInfo = (dictionary: SubjectsDictionary): void => {
     Object.keys(dictionary).forEach(sid => {
-        const subjectInfo = document.getElementById(`subject-${sid}-info`);
-        if (subjectInfo && subjectInfo.classList.contains("hidden")) {
-            subjectInfo.classList.remove("hidden");
-        }
+        showSubjectInfo(sid, true);
     });
 };
 
 // Oculta toda la información de las materias
 export const hideAllSubjectInfo = (dictionary: SubjectsDictionary): void => {
     Object.keys(dictionary).forEach(sid => {
-        const subjectInfo = document.getElementById(`subject-${sid}-info`);
-        if (subjectInfo && !subjectInfo.classList.contains("hidden")) {
-            subjectInfo.classList.add("hidden");
-        }
+        showSubjectInfo(sid, false);
     });
 };
 
