@@ -1,49 +1,47 @@
-"use client"
+"use client";
 
-import "../styles/context-menu.css"
-
-import React from 'react'
+import React from "react";
+import "../../styles/context-menu.css";
+import { ContextMenuState } from "@/types/career-view-types";
 
 const ContextMenu = ({
     contextMenuRef,
-    rightClickItem,
-    positionX,
-    positionY,
-    isToggled,
-    buttons
-}:any 
-) => {
+    contextMenu,
+    buttons,
+}: {
+    contextMenuRef: React.RefObject<HTMLDivElement | null>;
+    contextMenu: ContextMenuState;
+    buttons: { text: string; onClick: Function; isSpacer?: boolean }[];
+}) => {
+    if (!contextMenu.toggled) return null;
+
     return (
         <menu
             style={{
-                top: positionY + 2 + 'px',
-                left: positionX + 2 + 'px',
-
+                top: `${contextMenu.position.y}px`,
+                left: `${contextMenu.position.x}px`,
             }}
-            className={`context-menu ${isToggled? "active" : ""}`}
+            className={`context-menu ${contextMenu.toggled ? "active" : ""}`}
             ref={contextMenuRef}
         >
-            {buttons.map((button:any, index:any) => {
-                
-                const handleClick = (e:any) => {
-                    e.stopPropagation()
-                    button.onClick(e, rightClickItem)
-                }
-
-                if (button.isSpacer) return <hr key={index}></hr>
-
-                return (
-                    <button 
+            {buttons.map((button, index) =>
+                button.isSpacer ? (
+                    <hr key={index} />
+                ) : (
+                    <button
                         key={index}
-                        onClick={handleClick}
-                        className='context-menu-button'
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            button.onClick(contextMenu.subjectClicked);
+                        }}
+                        className="context-menu-button"
                     >
-                        <span> {button.text} </span>
+                        <span>{button.text}</span>
                     </button>
                 )
-            })}
+            )}
         </menu>
-    )
-}
+    );
+};
 
-export default ContextMenu
+export default ContextMenu;

@@ -1,15 +1,17 @@
-"use client"
+"use client";
 
-import React, { useEffect, useRef, useState } from 'react'
-import { ContextMenuState, Subject } from '@/types/career-view-types'
-import renderCareerViewTable from './career-render-table'
-import { hideCorrelativities } from '@/lib/subjectsUtils'
+import React from "react";
+import renderCareerViewTable from "./career-render-table";
+import { useContextMenu } from "@/components/context-menu/use-context-menu";
+import { Subject } from "@/types/career-view-types";
+import ContextMenu from "@/components/context-menu/context-menu";
+import { showCorrelativities } from "@/lib/subjectsUtils";
+import { changeStatus } from "@/lib/careerEditUtils";
 
-// Como indica el nombre, es solo un maquetado de ejemplo que sirve para ver como seran los estilos finales
-const TableViewCareer = ({ carrerData }: any) => {
+const TableViewCareer = ({ carrerData: careerData }: any) => {
+    const { contextMenuRef, contextMenu, handleContextMenu, resetContextMenu } = useContextMenu(careerData);
 
-    // Si no cargo ninguna carrera da alerta
-    if (!carrerData) {
+    if (!careerData) {
         return (
             <div>
                 <p>No hay datos disponibles. Por favor, carga un archivo válido.</p>
@@ -17,73 +19,26 @@ const TableViewCareer = ({ carrerData }: any) => {
         );
     }
 
-    /* ============ CONTEXT MENU ============ */
-    //#region 
-    const contextMenuRef = useRef<HTMLDivElement | null>(null);
-    const [contextMenu, setContextMenu] = useState<ContextMenuState>({
-        position: { x: 0, y: 0 },
-        toggled: false,
-        subjectClicked: null,
-    });
-
-    const handleOnContextMenu = (e: React.MouseEvent, subject: Subject) => {
-        e.preventDefault();
-        const contextMenuAttr = contextMenuRef.current?.getBoundingClientRect();
-        const isLeft = e.clientX < window?.innerWidth / 2;
-
-        let x = isLeft ? e.clientX : e.clientX - (contextMenuAttr?.width || 0);
-        let y = e.clientY;
-        // Resetea los estilos del elemento anterior en caso de haberlo
-        if (contextMenu.subjectClicked) {
-            const prevSubj = document.getElementById(
-                `subject-${contextMenu.subjectClicked.sid}`
-            );
-            prevSubj?.classList.remove("shadow-md", "shadow-slate-700");
-        }
-        // Quita los estilos de las correlativas anteriores
-        hideCorrelativities(carrerData.subjects);
-        // Cambia los estilos al nuevo elemento seleccionado
-        const currentSubj = document.getElementById(`subject-${subject.sid}`);
-        currentSubj?.classList.add("shadow-md", "shadow-slate-700");
-        setContextMenu({
-            position: { x, y },
-            toggled: true,
-            subjectClicked: subject,
-        });
-    };
-    
-    const resetContextMenu = () => {
-        if (contextMenu.subjectClicked) {
-            const subj = document.getElementById(
-                `subject-${contextMenu.subjectClicked.sid}`
-            );
-            subj?.classList.remove("shadow-md", "shadow-slate-700");
-        }
-        setContextMenu({
-            position: { x: 0, y: 0 },
-            toggled: false,
-            subjectClicked: null,
-        });
-    };
-
-    // Cerrar el menu contextual al hacer click
-    useEffect(() => {
-        const handler = (e: any) => {
-            if (contextMenuRef.current) resetContextMenu();
-        }
-        document.addEventListener('click', handler);
-        return () => {
-            document.removeEventListener('click', handler);
-        }
-    })
-    //#endregion
-    /* ============ CONTEXT MENU ============ */
-
     return (
-        <div className="p-2 flex divide-x-2 divide-gray-400 justify-center">
-            {renderCareerViewTable(carrerData, handleOnContextMenu, contextMenuRef, contextMenu)}
-        </div>
-    )
-}
+        <>
+            <div className="p-2 flex divide-x-2 divide-gray-400 justify-center">
+                {renderCareerViewTable(careerData, handleContextMenu)}
+            </div>
 
-export default TableViewCareer
+            <ContextMenu
+                contextMenuRef={contextMenuRef}
+                contextMenu={contextMenu}
+                buttons={[
+                    { text: "Marcar No Cursada", onClick: (subject: Subject) => changeStatus(careerData, subject, 0) },
+                    { text: "Marcar Regularizada", onClick: (subject: Subject) => changeStatus(careerData, subject, 1) },
+                    { text: "Marcar Aprobada", onClick: (subject: Subject) => changeStatus(careerData, subject, 2) },
+                    { text: "Marcar Promocionada", onClick: (subject: Subject) => changeStatus(careerData, subject, 3) },
+                    { text: "", onClick: () => null, isSpacer: true },
+                    { text: "Mostrar Correlativas", onClick: (subject: Subject) => showCorrelativities(careerData.subjects, subject) },
+                ]}
+            />
+        </>
+    );
+};
+
+export default TableViewCareer;
