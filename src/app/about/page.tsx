@@ -29,16 +29,18 @@ const AboutPage = () => {
                     </a>.
                 </p>
 
-                <div className="mt-6 text-center">
-                    <a
-                        href="https://www.linkedin.com/in/dembrowkynicolas/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition"
-                    >
-                        Ver LinkedIn
-                    </a>
-                </div>
+                <a
+                    href="https://www.linkedin.com/in/dembrowkynicolas/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition mt-6"
+                >
+                    Ver LinkedIn
+                </a>
+
+                <p className="mt-6">
+                    Agradecimientos a los testers: TODO
+                </p>
             </div>
         </div>
     );

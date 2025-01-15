@@ -33,7 +33,7 @@ export default function MainPage() {
         {/* CARDS */}
         <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 p-6">
           {/* Card 1 */}
-          <div className="bg-indigo-50 shadow-lg rounded-lg p-6 border border-gray-200">
+          <div className="card-container">
             <h2 className="text-lg font-bold text-gray-800 mb-4">
               Busca tu carrera entre las plantillas
             </h2>
@@ -42,14 +42,30 @@ export default function MainPage() {
             </p>
             <Link
               href="/template"
-              className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-md shadow-md transition duration-200"
+              className="card-btn"
             >
               Plantillas
             </Link>
           </div>
 
           {/* Card 2 */}
-          <div className="bg-indigo-50 shadow-lg rounded-lg p-6 border border-gray-200">
+          <div className="card-container">
+            <h2 className="text-lg font-bold text-gray-800 mb-4">
+              Tutorial
+            </h2>
+            <p className="text-gray-600 mb-4">
+              Guia de como utilizar la pagina.
+            </p>
+            <Link
+              href="/career-view"
+              className="card-btn"
+            >
+              TODO
+            </Link>
+          </div>
+
+          {/* Card 3 */}
+          <div className="card-container">
             <h2 className="text-lg font-bold text-gray-800 mb-4">
               Visualiza y modifica tu carrera
             </h2>
@@ -58,9 +74,25 @@ export default function MainPage() {
             </p>
             <Link
               href="/career-view"
-              className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-md shadow-md transition duration-200"
+              className="card-btn"
             >
               Ver Carrera
+            </Link>
+          </div>
+
+          {/* Card 4 */}
+          <div className="card-container">
+            <h2 className="text-lg font-bold text-gray-800 mb-4">
+              Dejar tu comentario
+            </h2>
+            <p className="text-gray-600 mb-4">
+              Completa el siguiente formulario para dar tu opinion sobre la pagina.
+            </p>
+            <Link
+              href="/career-view"
+              className="card-btn"
+            >
+              TODO
             </Link>
           </div>
         </div>

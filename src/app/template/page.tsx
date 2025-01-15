@@ -28,7 +28,6 @@ const TemplatePage = () => {
                 <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     {careers.map((career:any) => (
                         <div
-                            key={career.id}
                             className={`${career.color} text-white shadow-md rounded-lg p-6 border hover:shadow-lg transition-shadow`}
                         >
                             <h2 className="text-xl font-semibold mb-2">{career.name} - {career.college}</h2>

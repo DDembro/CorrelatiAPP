@@ -79,8 +79,6 @@ const TableViewCareer = ({ carrerData }: any) => {
     //#endregion
     /* ============ CONTEXT MENU ============ */
 
-    
-
     return (
         <div className="p-2 flex divide-x-2 divide-gray-400 justify-center">
             {renderCareerViewTable(carrerData, handleOnContextMenu, contextMenuRef, contextMenu)}

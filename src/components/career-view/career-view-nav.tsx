@@ -1,7 +1,7 @@
 import React from "react";
 import { showAllSubjectInfo, hideAllSubjectInfo, initiateSubjectsDictionary } from "@/lib/subjectsUtils";
 import Link from "next/link";
-import { downloadCareerData, saveLocalCareerData } from "@/lib/careerEditUtils";
+import { deleteLocalCareerData, downloadCareerData, saveLocalCareerData } from "@/lib/careerEditUtils";
 
 const CareerViewNav = ({ careerData, viewMode, setViewMode }: any) => {
     if (!careerData) {
@@ -10,7 +10,7 @@ const CareerViewNav = ({ careerData, viewMode, setViewMode }: any) => {
 
     // Al salir de la vista de una carrera mediante el boton
     const returnAction = () => {
-        sessionStorage.removeItem("careerData");
+        deleteLocalCareerData();
         if(!confirm("Desea salir de esta Carrera? todo cambio no Descargado se perdera"))
             return;
         window.location.href = '/career-view'

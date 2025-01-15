@@ -2,7 +2,7 @@ import React from "react";
 import { CareerData, Subject } from "@/types/career-view-types";
 
 import { initiateSubjectsDictionary, showCorrelativities, sortSubjects } from "@/lib/subjectsUtils";
-import ContextMenu from "../../../context-menu";
+import ContextMenu from "../../../context-menu/context-menu";
 import renderSubjects from "./carrer-render-subjects-table";
 import { changeStatus } from "@/lib/careerEditUtils";
 

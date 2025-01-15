@@ -1,6 +1,12 @@
 [
     {
-        "id":1,
+        "name":"Plantilla Vacia",
+        "college":"NA",
+        "description":"Plan 2023 k23",
+        "color":"bg-teal-500",
+        "file":"psicologia_uba.json"
+    },
+    {
         "name":"Ingeniería en Sistemas",
         "college":"UTN",
         "description":"Plan 2023 k23",
@@ -8,7 +14,6 @@
         "file":"ing_sistemas_utn.json"
     },
     {
-        "id":2,
         "name":"Traductorado Ingles",
         "college":"Lenguas Vivas",
         "description":"Plan 2023 k23",
@@ -16,7 +21,6 @@
         "file":"tradu_ingles_lenguas.json"
     },
     {
-        "id":3,
         "name":"Medicina",
         "college":"UBA",
         "description":"Plan 2023 k23",
@@ -24,7 +28,6 @@
         "file":"medicina_uba.json"
     },
     {
-        "id":4,
         "name":"Abogacia",
         "college":"UBA",
         "description":"Plan 2023 k23",
@@ -32,7 +35,6 @@
         "file":"abogacia_uba.json"
     },
     {
-        "id":5,
         "name":"Psicologia",
         "college":"UBA",
         "description":"Plan 2023 k23",

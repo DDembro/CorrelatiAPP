@@ -2,12 +2,17 @@ import { CareerData, Subject } from "@/types/career-view-types";
 
 // Guarda CareerData
 export const saveLocalCareerData = (careerData: CareerData) => {
-    sessionStorage.setItem("careerData", JSON.stringify(careerData));
+    localStorage.setItem("careerData", JSON.stringify(careerData));
 };
 
 // Devuelve CareerData
 export const getLocalCareerData = () => {
-    return sessionStorage.getItem("careerData");
+    return localStorage.getItem("careerData");
+};
+
+// Borra CarrerData
+export const deleteLocalCareerData = () => {
+    return localStorage.removeItem("careerData");
 };
 
 // Valida un CareerData
@@ -52,5 +57,5 @@ export const changeStatus = (careerData: CareerData, subject: Subject, status: n
         subj.personal.status = status; // Actualizar el campo status
     }
     // Guarda en sessionStorage para tener los cambios sincronizados
-    sessionStorage.setItem("careerData", JSON.stringify(careerData));
+    saveLocalCareerData(careerData);
 };
