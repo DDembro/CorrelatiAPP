@@ -2,11 +2,9 @@ import React from "react";
 import { CareerData, Subject } from "@/types/career-view-types";
 
 import { initiateSubjectsDictionary, sortSubjects } from "@/lib/subjectsUtils";
-import renderSubjects from "./carrer-render-subjects-table";
+import RenderViewSubjects from "./carrer-subjects-view-table";
 
-const renderCareerViewTable = (carrerData:CareerData, handleOnContextMenu:any) => {
-    const title = carrerData.title
-    const author = carrerData.author
+const CareerRenderViewTable = (carrerData:CareerData, handleOnContextMenu:any) => {
     const years = carrerData.years
     const subjects = carrerData.subjects
 
@@ -18,12 +16,15 @@ const renderCareerViewTable = (carrerData:CareerData, handleOnContextMenu:any) =
     // Crea las columnas de los años con sus materias dentro
     for (let i = 0; i < years; i++) {
         yearCols.push(
-            <div className="px-2 w-64 divide-y-2 divide-gray-400 divide-dashed">
+            <div 
+                key={`year-${i}`}
+                className="px-2 w-64 divide-y-2 divide-gray-400 divide-dashed"
+            >
                 <div className="text-center">
                     <strong>Año {i + 1}</strong>
                 </div>
                 <div>
-                    {renderSubjects(sortedSubjects[i], subjectsDictionary, handleOnContextMenu)}
+                    {RenderViewSubjects(sortedSubjects[i], subjectsDictionary, handleOnContextMenu)}
                 </div>
             </div>
         )
@@ -36,4 +37,4 @@ const renderCareerViewTable = (carrerData:CareerData, handleOnContextMenu:any) =
     )
 }
 
-export default renderCareerViewTable;
+export default CareerRenderViewTable;

@@ -26,15 +26,30 @@ const TemplatePage = () => {
                     Plantillas de Carreras
                 </h1>
                 <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                    {careers.map((career:any) => (
+                    {careers.map((career: any) => (
                         <div
-                            className={`${career.color} text-white shadow-md rounded-lg p-6 border hover:shadow-lg transition-shadow`}
+                            className={`flex flex-col h-full relative overflow-hidden ${career.color} text-slate-100 shadow-lg rounded-xl p-6 border hover:shadow-xl transition-shadow`}
                         >
-                            <h2 className="text-xl font-semibold mb-2">{career.name} - {career.college}</h2>
-                            <p className="font-medium mb-4">{career.description}</p>
+                            <div className="relative z-10 flex-grow">
+                                {/* Título */}
+                                <h2 className="text-2xl font-bold mb-2">
+                                    {career.name} <span className="italic">- {career.college}</span>
+                                </h2>
+
+                                {/* Autor */}
+                                <p className="text-md font-semibold text-slate-300 italic mb-4">Por: {career.author}</p>
+
+                                {/* Descripción */}
+                                <p className="text-md font-semibold text-slate-200 leading-relaxed mb-6">
+                                    {career.description}
+                                </p>
+
+
+                            </div>
+                            {/* Botón */}
                             <button
                                 onClick={() => handleDownload(career.file)}
-                                className="w-full bg-gray-100 text-gray-800 font-semibold py-2 px-4 rounded-md shadow-md hover:bg-gray-300 transition duration-200"
+                                className="mt-auto bg-slate-100 text-slate-800 font-semibold py-2 px-4 rounded-lg shadow hover:scale-105 hover:bg-slate-200 transition-transform duration-200"
                             >
                                 Descargar
                             </button>

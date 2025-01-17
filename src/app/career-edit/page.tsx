@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import TableViewCareer from "@/components/career-view/view-modes/table/career-view-table";
 import { CareerData } from "@/types/career-view-types";
 import CareerEditNav from "@/components/career-edit/career-edit-nav";
 import { getLocalCareerData } from "@/lib/careerEditUtils";
+import CareerEditTable from "@/components/career-edit/career-edit-table";
 
 const CareerEditPage = () => {
     const [careerData, setCarrerData] = useState<CareerData | null>(null); // Datos cargados
@@ -32,7 +32,7 @@ const CareerEditPage = () => {
         <div className="p-2">
             <CareerEditNav careerData={careerData} />
             <div>
-                <TableViewCareer carrerData={careerData} />
+                <CareerEditTable carrerData={careerData} />
             </div>
         </div>
     );

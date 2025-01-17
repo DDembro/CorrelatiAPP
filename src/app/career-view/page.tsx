@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import TableViewCareer from "@/components/career-view/view-modes/table/career-view-table";
+import CareerViewTable from "@/components/career-view/view-modes/table/career-view-table";
 import ListViewCareer from "@/components/career-view/view-modes/career-view-list";
 import CareerViewNav from "@/components/career-view/career-view-nav";
 import CareerViewUpload from "@/components/career-view/career-view-upload";
@@ -10,14 +10,14 @@ import { getLocalCareerData, isValidCareerData } from "@/lib/careerEditUtils";
 
 const CareerViewPage = () => {
     const [viewMode, setViewMode] = useState(true); // Tabla o Lista
-    const [careerData, setCarrerData] = useState<CareerData | null>(null); // Datos cargados
+    const [careerData, setCareerData] = useState<CareerData | null>(null); // Datos cargados
 
     // Maneja la carga inicial del json
     const handleFileUpload = (data: any) => {
         try {
             const parsedData = JSON.parse(data);
             if (isValidCareerData(parsedData)) {
-                setCarrerData(parsedData);
+                setCareerData(parsedData);
             } else {
                 throw new Error("El archivo no es valido o esta dañado.");
             }
@@ -32,7 +32,7 @@ const CareerViewPage = () => {
         const storedData = getLocalCareerData();
         if (storedData) {
             const parsedData: CareerData = JSON.parse(storedData); // Parsear el JSON almacenado
-            setCarrerData(parsedData); // Establecer en el estado
+            setCareerData(parsedData); // Establecer en el estado
         }
     }, []);
 
@@ -52,7 +52,7 @@ const CareerViewPage = () => {
             <CareerViewNav careerData={careerData} viewMode={viewMode} setViewMode={setViewMode} />
             <div>
                 {viewMode ? (
-                    <TableViewCareer carrerData={careerData} />
+                    <CareerViewTable carrerData={careerData} setCareerData={setCareerData} />
                 ) : (
                     <ListViewCareer carrerData={careerData} />
                 )}

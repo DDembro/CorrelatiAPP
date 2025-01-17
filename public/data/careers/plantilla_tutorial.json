@@ -1,0 +1,174 @@
+{
+    "title": "Plantilla Vacia",
+    "author": "NA",
+    "years": 3,
+    "creationDate": "2025-01-16T03:10:26.913Z",
+    "lastUpdateDate": "2025-01-16T03:10:26.913Z",
+    "subjects": [
+        {
+            "sid": 4,
+            "index": 0,
+            "info": {
+                "name": "Mira mi descripción!",
+                "altname": "E1",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 2,
+                "description": "En modo editar, puedes cambiar tanto las materias como la información general de la Carrera! ",
+                "correlativities": {
+                    "regularized": [
+                        1
+                    ],
+                    "approved": [
+                        2
+                    ]
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": 1,
+            "index": 0,
+            "info": {
+                "name": "Presiona Click en Mi!",
+                "altname": "M1",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 1,
+                "description": "Hola! Aquí puedes encontrar mas información sobre las materias!",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": 5,
+            "index": 0,
+            "info": {
+                "name": "Arrástrame por la pantalla!",
+                "altname": "F1",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 3,
+                "description": "Y suéltame en otro año!",
+                "correlativities": {
+                    "regularized": [
+                        2
+                    ],
+                    "approved": [
+                        3
+                    ]
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": 2,
+            "index": 1,
+            "info": {
+                "name": "Ahora Prueba Click Derecho!",
+                "altname": "M2",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 1,
+                "description": "Prueba todos los botones!",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": 6,
+            "index": 1,
+            "info": {
+                "name": "Mira mis correlativas!",
+                "altname": "F1",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 3,
+                "description": "También puedes cambiarlas!",
+                "correlativities": {
+                    "regularized": [
+                        1,
+                        2
+                    ],
+                    "approved": [
+                        3,
+                        4
+                    ]
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": 3,
+            "index": 2,
+            "info": {
+                "name": "Ve al modo Editar en la Barra de Opciones!",
+                "altname": "M3",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 1,
+                "description": "Prueba todas las nuevas opciones!",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": 7,
+            "index": 2,
+            "info": {
+                "name": "Importante!!",
+                "altname": "F1",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 3,
+                "description": "Todos los cambios estan guardados en tu navegador (hasta que tu mismo salgas de una carrera). Por lo que es ALTAMENTE recomendable que una vez editada o modificada una carrera, descargues la ultima versión!",
+                "correlativities": {
+                    "regularized": [
+                        1
+                    ],
+                    "approved": [
+                        4
+                    ]
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        }
+    ]
+}

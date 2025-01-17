@@ -1,11 +1,28 @@
 export interface CareerData {
-    id: number,
     title: string,
     author: string,
     years: number,
-    color: string,
     creationDate: Date,
+    lastUpdateDate: Date;
     subjects: [Subject]
+}
+
+export enum Modality {
+    Presencial = 0,
+    Virtual = 1,
+    Hibrido = 2,
+}
+
+export enum Duration {
+    Cuatrimestral = 0,
+    Anual = 1,
+}
+
+export enum SubjectStatus {
+    NA = 0, // Not Available
+    Regularizado = 1,
+    Aprobado = 2,
+    Promocionado = 3,
 }
 
 export interface Subject {
@@ -13,11 +30,11 @@ export interface Subject {
     index: number;
     info: {
         year: number;
-        modality: number;
+        modality: Modality; // Reemplazo con el enum
         name: string;
         altname: string;
         description?: string;
-        duration: number;
+        duration: Duration;
         weeklyLoad: number;
         correlativities: {
             regularized: string[];
@@ -25,7 +42,7 @@ export interface Subject {
         };
     };
     personal: {
-        status: number; // 0 na, 1 regularizado, 2 aprobado, 3 promocionado
+        status: SubjectStatus; // Reemplazo con el enum
         qualification: number;
     };
 }

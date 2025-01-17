@@ -1,10 +1,9 @@
 {
-    "id": 1,
     "title": "Ing en sistemas UTN",
     "author": "Nicolas",
     "years": 5,
-    "color": "bg-red-400",
-    "creationDate": "2024-03-24",
+    "creationDate": "2025-01-15T19:55:58.389Z",
+    "lastUpdateDate": "2025-01-15T19:55:58.389Z",
     "subjects": [
         {
             "sid": 1,
@@ -12,7 +11,7 @@
             "info": {
                 "name": "Sistemas y Procesos de Negocio",
                 "altname": "SyPN",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 1,
@@ -23,10 +22,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -35,7 +32,7 @@
             "info": {
                 "name": "Analisis Matematico 1",
                 "altname": "AM1",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 1,
@@ -46,10 +43,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -58,7 +53,7 @@
             "info": {
                 "name": "Logica y Estructuras Discretas",
                 "altname": "LyED",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 1,
@@ -69,10 +64,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -81,7 +74,7 @@
             "info": {
                 "name": "Algoritmos y Estructuras de Datos",
                 "altname": "AyED",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 1,
@@ -92,10 +85,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -104,7 +95,7 @@
             "info": {
                 "name": "Arquitectura de Computadoras",
                 "altname": "AdC",
-                "duration": 2,
+                "duration": 0,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 1,
@@ -115,10 +106,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -127,7 +116,7 @@
             "info": {
                 "name": "Algebra y Geometria Analitica",
                 "altname": "AGA",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 1,
@@ -138,10 +127,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -150,7 +137,7 @@
             "info": {
                 "name": "Fisica 1",
                 "altname": "F1",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 1,
@@ -161,10 +148,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -173,7 +158,7 @@
             "info": {
                 "name": "Ingenieria y Sociedad",
                 "altname": "IngSoc",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 1,
@@ -184,10 +169,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -196,7 +179,7 @@
             "info": {
                 "name": "Analisis de Sistemas de Informacion",
                 "altname": "ASI",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 2,
@@ -207,10 +190,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -219,7 +200,7 @@
             "info": {
                 "name": "Analisis Matematico 2",
                 "altname": "AM2",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 2,
@@ -230,10 +211,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -242,7 +221,7 @@
             "info": {
                 "name": "Sintaxis y Semantica de los Lenguajes",
                 "altname": "SySL",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 2,
@@ -253,10 +232,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -265,7 +242,7 @@
             "info": {
                 "name": "Paradigmas de Programacion",
                 "altname": "PdP",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 2,
@@ -276,10 +253,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -288,7 +263,7 @@
             "info": {
                 "name": "Ingles 1",
                 "altname": "IT1",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 2,
@@ -299,10 +274,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -311,7 +284,7 @@
             "info": {
                 "name": "Fisica 2",
                 "altname": "F2",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 2,
@@ -322,10 +295,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -334,7 +305,7 @@
             "info": {
                 "name": "Sistemas Operativos",
                 "altname": "SSOO",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 2,
@@ -345,10 +316,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -357,7 +326,7 @@
             "info": {
                 "name": "Probabilidad y estadistica",
                 "altname": "PyE",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 2,
@@ -368,10 +337,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -380,7 +347,7 @@
             "info": {
                 "name": "Diseño de Sistemas de Informacion",
                 "altname": "DSI",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 3,
@@ -391,10 +358,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -403,7 +368,7 @@
             "info": {
                 "name": "Ingles 2",
                 "altname": "IT2",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 3,
@@ -414,10 +379,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -426,7 +389,7 @@
             "info": {
                 "name": "Economia",
                 "altname": "ECO",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 3,
@@ -437,10 +400,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -449,7 +410,7 @@
             "info": {
                 "name": "Desarrollo de Software",
                 "altname": "DdS",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 3,
@@ -460,10 +421,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -472,7 +431,7 @@
             "info": {
                 "name": "Base de Datos",
                 "altname": "BD",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 3,
@@ -483,10 +442,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -495,7 +452,7 @@
             "info": {
                 "name": "Seminario Integrador",
                 "altname": "SI",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 3,
@@ -506,10 +463,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -518,7 +473,7 @@
             "info": {
                 "name": "Comunicacion de Datos",
                 "altname": "CD",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 3,
@@ -529,10 +484,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -541,7 +494,7 @@
             "info": {
                 "name": "Redes de Datos",
                 "altname": "RD",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 3,
@@ -552,10 +505,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -564,7 +515,7 @@
             "info": {
                 "name": "Administracion de Sistemas de Informacion",
                 "altname": "AdmSI",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 4,
@@ -575,10 +526,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -587,7 +536,7 @@
             "info": {
                 "name": "Analisis Numerico",
                 "altname": "AN",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 4,
@@ -598,10 +547,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -610,7 +557,7 @@
             "info": {
                 "name": "Ingenieria y Calidad de Software",
                 "altname": "IyCS",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 4,
@@ -621,10 +568,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -633,7 +578,7 @@
             "info": {
                 "name": "Simulacion",
                 "altname": "Sim",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 4,
@@ -644,10 +589,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -656,7 +599,7 @@
             "info": {
                 "name": "Legislacion",
                 "altname": "Leg",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 4,
@@ -667,10 +610,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -679,7 +620,7 @@
             "info": {
                 "name": "Investigacion Operativa",
                 "altname": "IO",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 4,
@@ -690,10 +631,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -702,7 +641,7 @@
             "info": {
                 "name": "Tecnologias para la Automatizacion",
                 "altname": "TpA",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 4,
@@ -713,10 +652,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -725,7 +662,7 @@
             "info": {
                 "name": "Ciencia de Datos",
                 "altname": "CdD",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 4,
@@ -736,10 +673,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -748,7 +683,7 @@
             "info": {
                 "name": "Proyecto Final",
                 "altname": "",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 5,
@@ -759,10 +694,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -771,7 +704,7 @@
             "info": {
                 "name": "Inteligencia Artificial",
                 "altname": "IA",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 5,
@@ -782,10 +715,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -794,7 +725,7 @@
             "info": {
                 "name": "Gestion Gerencial",
                 "altname": "GC",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 5,
@@ -805,10 +736,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -817,7 +746,7 @@
             "info": {
                 "name": "Sistemas de Gestion",
                 "altname": "SG",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 5,
@@ -828,10 +757,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         },
         {
@@ -840,7 +767,7 @@
             "info": {
                 "name": "Seguridad en los Sistemas de Informacion",
                 "altname": "SSI",
-                "duration": 2,
+                "duration": 1,
                 "modality": 1,
                 "weeklyLoad": 4,
                 "year": 5,
@@ -851,10 +778,8 @@
                 }
             },
             "personal": {
-                "isRegularized": false,
-                "isApproved": false,
-                "isPromoted": false,
-                "qualification": 0
+                "qualification": 0,
+                "status": 0
             }
         }
     ]

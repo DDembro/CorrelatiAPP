@@ -77,32 +77,6 @@ export const formatCorrelativities = (
     return formattedCorr;
 };
 
-// Formatea la duración de una materia
-export const formatDuration = (duration: number): string => {
-    switch (duration) {
-        case 1:
-            return "Cuatrimestral";
-        case 2:
-            return "Anual";
-        default:
-            return "Error";
-    }
-};
-
-// Formatea la modalidad de una materia
-export const formatModality = (modality: number): string => {
-    switch (modality) {
-        case 1:
-            return "Presencial";
-        case 2:
-            return "Virtual";
-        case 3:
-            return "Hibrido";
-        default:
-            return "Error";
-    }
-};
-
 // Verifica si es posible inscribirse a esa materia según sus correlatividades
 export const checkCanEnroll = (
     subject: Subject,

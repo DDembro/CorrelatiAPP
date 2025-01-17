@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { showAllSubjectInfo, hideAllSubjectInfo, initiateSubjectsDictionary } from "@/lib/subjectsUtils";
 import Link from "next/link";
 import { downloadCareerData, saveLocalCareerData } from "@/lib/careerEditUtils";
+import EditCareerModal from "../modal/edit-career-modal";
 
 const CareerEditNav = ({ careerData }: any) => {
+    // Estado para controlar la visibilidad del modal
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     if (!careerData) {
         return <></>;
     }
 
     return (
         <div className="p-4 flex items-center bg-gray-100 rounded-lg shadow-md text-white">
-            
             <Link
                 href="/career-view"
                 className="bg-blue-500 font-medium px-4 py-2 mx-2 rounded-md shadow hover:bg-blue-700 active:shadow-inner focus:outline-none"
@@ -25,20 +28,27 @@ const CareerEditNav = ({ careerData }: any) => {
                 Editando: {careerData.title}
             </p>
 
-
-            <Link
-                href="/career-edit"
+            <button
+                onClick={() => setIsModalOpen(true)} // Abrir el modal
                 className="bg-blue-500 font-medium px-4 py-2 mx-2 rounded-md shadow hover:bg-blue-700 active:shadow-inner focus:outline-none"
             >
-                Editar
-            </Link>
+                Cambiar Datos de la Carrera
+            </button>
 
             <button
-                onClick={(e) => downloadCareerData(careerData)}
+                onClick={() => downloadCareerData(careerData)}
                 className="bg-blue-500 font-medium px-4 py-2 mx-2 rounded-md shadow hover:bg-blue-700 focus:outline-none"
             >
                 Descargar
             </button>
+
+            {/* Renderizar el modal solo si está abierto */}
+            {isModalOpen && (
+                <EditCareerModal
+                    careerData={careerData}
+                    onClose={() => setIsModalOpen(false)} // Cerrar el modal
+                />
+            )}
         </div>
     );
 };

@@ -2,23 +2,23 @@ import React from "react";
 import {
     checkCanEnroll,
     formatCorrelativities,
-    formatDuration,
-    formatModality,
     showSubjectInfo,
 } from "@/lib/subjectsUtils";
-import { Subject } from "../../../../types/career-view-types";
+import { Duration, Modality, Subject, SubjectStatus } from "../../../../types/career-view-types";
 
-const renderSubjects = (subjectArr: any, dictionary: any, handleOnContextMenu: any) => {
+const RenderViewSubjects = (subjectArr: any, dictionary: any, handleOnContextMenu: any) => {
     let subjectsCards: React.JSX.Element[] = [];
 
-    subjectArr.forEach((subject: Subject) => {
+    subjectArr.forEach((subject: Subject, index: number) => {
+        subject.index = index; // Actualiza el indice
+
         const info = subject.info;
         const personal = subject.personal;
         const canEnroll = checkCanEnroll(subject, dictionary);
 
         const correlativities = formatCorrelativities(info.correlativities, dictionary);
-        const duration = formatDuration(info.duration);
-        const modality = formatModality(info.modality);
+        const duration = Duration[info.duration];
+        const modality = Modality[info.modality];
 
         subjectsCards.push(
             <div
@@ -31,14 +31,14 @@ const renderSubjects = (subjectArr: any, dictionary: any, handleOnContextMenu: a
                 {/* Título */}
                 <div
                     className={`text-center py-1 rounded-sm font-semibold text-white px-1 ${
-                        personal.status === 3
-                            ? "bg-green-700" // promoted
-                            : personal.status === 2
+                        personal.status === SubjectStatus.Promocionado
+                            ? "bg-green-700" // Promoted
+                            : personal.status === SubjectStatus.Aprobado
                             ? "bg-green-600" // Approved
-                            : personal.status === 1
+                            : personal.status === SubjectStatus.Regularizado
                             ? "bg-yellow-500" // Regularized
                             : canEnroll
-                            ? "bg-indigo-500" // Can enroll
+                            ? "bg-indigo-500" // Can Enroll
                             : "bg-stone-400"  // Default
                     }`}
                 >
@@ -65,6 +65,11 @@ const renderSubjects = (subjectArr: any, dictionary: any, handleOnContextMenu: a
                         <p>{info.description}</p>
                     </div>
 
+                    {/* Nota */}
+                    <div className="mb-2 text-gray-600 text-sm">
+                        <p>Nota: {personal.qualification}</p>
+                    </div>
+
                     {/* Correlativas */}
                     <div>
                         <p className="font-medium text-gray-700">Requisitos:</p>
@@ -81,4 +86,4 @@ const renderSubjects = (subjectArr: any, dictionary: any, handleOnContextMenu: a
     return subjectsCards;
 };
 
-export default renderSubjects;
+export default RenderViewSubjects;

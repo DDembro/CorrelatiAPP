@@ -35,52 +35,20 @@ export default function MainPage() {
           {/* Card 1 */}
           <div className="card-container">
             <h2 className="text-lg font-bold text-gray-800 mb-4">
-              Busca tu carrera entre las plantillas
-            </h2>
-            <p className="text-gray-600 mb-4">
-              Descarga una de las plantillas vacías para empezar a gestionar tu carrera.
-            </p>
-            <Link
-              href="/template"
-              className="card-btn"
-            >
-              Plantillas
-            </Link>
-          </div>
-
-          {/* Card 2 */}
-          <div className="card-container">
-            <h2 className="text-lg font-bold text-gray-800 mb-4">
               Tutorial
             </h2>
             <p className="text-gray-600 mb-4">
               Guia de como utilizar la pagina.
             </p>
             <Link
-              href="/career-view"
+              href="/template"
               className="card-btn"
             >
               TODO
             </Link>
           </div>
 
-          {/* Card 3 */}
-          <div className="card-container">
-            <h2 className="text-lg font-bold text-gray-800 mb-4">
-              Visualiza y modifica tu carrera
-            </h2>
-            <p className="text-gray-600 mb-4">
-              Gestiona y actualiza el estado de tus materias fácilmente.
-            </p>
-            <Link
-              href="/career-view"
-              className="card-btn"
-            >
-              Ver Carrera
-            </Link>
-          </div>
-
-          {/* Card 4 */}
+          {/* Card 2 */}
           <div className="card-container">
             <h2 className="text-lg font-bold text-gray-800 mb-4">
               Dejar tu comentario
@@ -88,12 +56,13 @@ export default function MainPage() {
             <p className="text-gray-600 mb-4">
               Completa el siguiente formulario para dar tu opinion sobre la pagina.
             </p>
-            <Link
-              href="/career-view"
+            <a
+              href="https://forms.gle/Hve3WEhUxm81Cqr59"
+              target="_blank"
               className="card-btn"
             >
-              TODO
-            </Link>
+              Ir al Formulario
+            </a>
           </div>
         </div>
       </div>

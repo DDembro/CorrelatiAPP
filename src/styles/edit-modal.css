@@ -1,0 +1,39 @@
+.modal-overlay {
+    @apply fixed inset-0 bg-gray-900 bg-opacity-70 flex justify-center items-center z-50;
+}
+.modal-content {
+    @apply bg-white p-8 rounded-2xl shadow-2xl w-full max-w-lg transform transition-transform scale-105;
+}
+.modal-title {
+    @apply text-2xl font-semibold text-gray-800 mb-6 text-center;
+}
+.modal-fields {
+    @apply space-y-6;
+}
+.modal-field {
+    @apply flex flex-col space-y-2;
+}
+.modal-label {
+    @apply text-sm font-medium text-gray-600;
+}
+.modal-input {
+    @apply p-3 border-indigo-300 border-2 rounded-lg bg-indigo-100 text-gray-700 focus:border-indigo-500 focus:outline-none transition;
+}
+.modal-textarea {
+    @apply resize-none h-32;
+}
+.modal-select {
+    @apply cursor-pointer;
+}
+.modal-actions {
+    @apply flex justify-end space-x-4 mt-8;
+}
+.modal-button {
+    @apply px-6 py-2 rounded-lg font-semibold focus:ring-2 transition;
+}
+.modal-cancel-button {
+    @apply bg-gray-200 text-gray-700 hover:bg-gray-300 focus:ring-gray-400;
+}
+.modal-save-button {
+    @apply bg-blue-500 text-white hover:bg-blue-600 focus:ring-blue-400;
+}

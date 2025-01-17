@@ -1,44 +1,18 @@
 [
     {
-        "name":"Plantilla Vacia",
+        "name":"Plantilla Tutorial",
+        "author":"Nicolas Dembrowky",
         "college":"NA",
-        "description":"Plan 2023 k23",
-        "color":"bg-teal-500",
-        "file":"psicologia_uba.json"
+        "description":"Descarga esta plantilla y usala en Ver Mi Carrera",
+        "color":"bg-teal-600",
+        "file":"plantilla_tutorial.json"
     },
     {
         "name":"Ingeniería en Sistemas",
+        "author":"Nicolas Dembrowky",
         "college":"UTN",
         "description":"Plan 2023 k23",
-        "color":"bg-blue-500",
+        "color":"bg-blue-600",
         "file":"ing_sistemas_utn.json"
-    },
-    {
-        "name":"Traductorado Ingles",
-        "college":"Lenguas Vivas",
-        "description":"Plan 2023 k23",
-        "color":"bg-green-500",
-        "file":"tradu_ingles_lenguas.json"
-    },
-    {
-        "name":"Medicina",
-        "college":"UBA",
-        "description":"Plan 2023 k23",
-        "color":"bg-yellow-500",
-        "file":"medicina_uba.json"
-    },
-    {
-        "name":"Abogacia",
-        "college":"UBA",
-        "description":"Plan 2023 k23",
-        "color":"bg-red-500",
-        "file":"abogacia_uba.json"
-    },
-    {
-        "name":"Psicologia",
-        "college":"UBA",
-        "description":"Plan 2023 k23",
-        "color":"bg-teal-500",
-        "file":"psicologia_uba.json"
     }
 ]
