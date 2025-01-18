@@ -52,9 +52,9 @@ const CareerViewPage = () => {
             <CareerViewNav careerData={careerData} viewMode={viewMode} setViewMode={setViewMode} />
             <div>
                 {viewMode ? (
-                    <CareerViewTable carrerData={careerData} setCareerData={setCareerData} />
+                    <CareerViewTable careerData={careerData} />
                 ) : (
-                    <ListViewCareer carrerData={careerData} />
+                    <ListViewCareer careerData={careerData} />
                 )}
             </div>
         </div>

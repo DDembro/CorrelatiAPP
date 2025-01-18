@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { CareerData } from "@/types/career-view-types";
 import "../../styles/edit-modal.css";
-import { changeCareerInfo, changeSubjectYear } from "@/lib/careerEditUtils";
+import { changeCareerInfo } from "@/lib/careerEditUtils";
 
 type EditCareerModalProps = {
     careerData: CareerData;

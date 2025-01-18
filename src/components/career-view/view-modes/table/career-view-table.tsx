@@ -1,15 +1,20 @@
+// CareerViewTable.tsx
 "use client";
 
 import React from "react";
 import CareerRenderViewTable from "./career-render-view-table";
 import { useContextMenu } from "@/components/context-menu/use-context-menu";
-import { Subject, SubjectStatus } from "@/types/career-view-types";
+import { CareerData, Subject, SubjectStatus } from "@/types/career-view-types";
 import ContextMenu from "@/components/context-menu/context-menu";
 import { showCorrelativities } from "@/lib/subjectsUtils";
 import { changeQualification, changeStatus } from "@/lib/careerEditUtils";
 
-const CareerViewTable = ({ carrerData: careerData }: any) => {
-    const { contextMenuRef, contextMenu, handleContextMenu, resetContextMenu } = useContextMenu(careerData);
+interface CareerViewTableProps {
+    careerData: CareerData;
+}
+
+const CareerViewTable: React.FC<CareerViewTableProps> = ({ careerData }) => {
+    const { contextMenuRef, contextMenu, handleContextMenu } = useContextMenu(careerData);
 
     if (!careerData) {
         return (
@@ -29,13 +34,45 @@ const CareerViewTable = ({ carrerData: careerData }: any) => {
                 contextMenuRef={contextMenuRef}
                 contextMenu={contextMenu}
                 buttons={[
-                    { text: "Marcar No Cursada", onClick: (subject: Subject) => changeStatus(careerData, subject, SubjectStatus.NA) },
-                    { text: "Marcar Regularizada", onClick: (subject: Subject) => changeStatus(careerData, subject, SubjectStatus.Regularizado) },
-                    { text: "Marcar Aprobada", onClick: (subject: Subject) => changeStatus(careerData, subject, SubjectStatus.Aprobado) },
-                    { text: "Marcar Promocionada", onClick: (subject: Subject) => changeStatus(careerData, subject, SubjectStatus.Promocionado) },
+                    {
+                        text: "Marcar No Cursada",
+                        onClick: (subject: Subject) =>
+                            changeStatus(careerData, subject, SubjectStatus.NA),
+                    },
+                    {
+                        text: "Marcar Regularizada",
+                        onClick: (subject: Subject) =>
+                            changeStatus(careerData, subject, SubjectStatus.Regularizado),
+                    },
+                    {
+                        text: "Marcar Aprobada",
+                        onClick: (subject: Subject) =>
+                            changeStatus(careerData, subject, SubjectStatus.Aprobado),
+                    },
+                    {
+                        text: "Marcar Promocionada",
+                        onClick: (subject: Subject) =>
+                            changeStatus(careerData, subject, SubjectStatus.Promocionado),
+                    },
                     { text: "", onClick: () => null, isSpacer: true },
-                    { text: "Mostrar Correlativas", onClick: (subject: Subject) => showCorrelativities(careerData.subjects, subject) },
-                    { text: "Ingresar tu Nota", onClick: (subject: Subject) => changeQualification(careerData.subjects, subject, Number(prompt("Ingresa tu nota para "+subject.info.name))) },
+                    {
+                        text: "Mostrar Correlativas",
+                        onClick: (subject: Subject) =>
+                            showCorrelativities(careerData.subjects, subject),
+                    },
+                    {
+                        text: "Ingresar tu Nota",
+                        onClick: (subject: Subject) =>
+                            changeQualification(
+                                careerData,
+                                subject,
+                                Number(
+                                    prompt(
+                                        "Ingresa tu nota para " + subject.info.name
+                                    )
+                                )
+                            ),
+                    },
                 ]}
             />
         </>

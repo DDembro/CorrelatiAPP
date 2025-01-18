@@ -38,13 +38,13 @@ export default function MainPage() {
               Tutorial
             </h2>
             <p className="text-gray-600 mb-4">
-              Guia de como utilizar la pagina.
+              Descarga la plantilla Tutorial para aprender las nociones basicas de la App.
             </p>
             <Link
               href="/template"
               className="card-btn"
             >
-              TODO
+              Ver en Plantillas
             </Link>
           </div>
 

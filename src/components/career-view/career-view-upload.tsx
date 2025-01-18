@@ -53,7 +53,7 @@ const CareerViewUpload = ({ onFileUpload }: { onFileUpload: (data: string) => vo
             >
                 {/* Header */}
                 <h2 className="text-3xl font-bold text-indigo-600 mb-4 text-center">
-                    📂 Subir Archivo
+                    📂 Subir Carrera
                 </h2>
 
                 {/* Drag & Drop Area */}
@@ -72,7 +72,8 @@ const CareerViewUpload = ({ onFileUpload }: { onFileUpload: (data: string) => vo
                         className="hidden"
                     />
                     <p className="mt-3 text-sm text-gray-500">
-                        Arrastra y suelta un archivo aquí o haz clic para seleccionarlo.
+                        Arrastra y suelta un archivo aquí o haz clic en el boton para seleccionar <br />
+                        Si no tienes un archivo, ve a plantillas y descarga uno para comenzar.
                     </p>
                 </div>
             </div>

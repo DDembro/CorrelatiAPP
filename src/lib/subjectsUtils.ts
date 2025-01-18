@@ -1,6 +1,6 @@
 // Tipos usados para las funciones
 
-import { Subject } from "@/types/career-view-types";
+import { CareerData, Subject, SubjectStatus } from "@/types/career-view-types";
 
 
 interface Correlativities {
@@ -13,7 +13,7 @@ interface DictionaryEntry {
     status: "promoted" | "approved" | "regularized" | "na";
 }
 
-type SubjectsDictionary = Record<string, DictionaryEntry>;
+export type SubjectsDictionary = Record<string, DictionaryEntry>;
 
 type FormattedCorrelativities = {
     regularized: string;
@@ -22,7 +22,7 @@ type FormattedCorrelativities = {
 
 // Acomoda las materias según su año e índice
 export const sortSubjects = (subjects: Subject[], years: number): Subject[][] => {
-    let sortedArr: Subject[][] = Array.from({ length: years }, () => []);
+    const sortedArr: Subject[][] = Array.from({ length: years }, () => []);
 
     // Ordena las materias por índice
     subjects.sort((a, b) => a.index - b.index);
@@ -37,7 +37,7 @@ export const sortSubjects = (subjects: Subject[], years: number): Subject[][] =>
 
 // Crea un diccionario { sid: { altname: "", status: "" } } por cada materia
 export const initiateSubjectsDictionary = (subjectsArr: Subject[]): SubjectsDictionary => {
-    let dictionary: SubjectsDictionary = {};
+    const dictionary: SubjectsDictionary = {};
 
     subjectsArr.forEach(subject => {
         const pers = subject.personal;
@@ -59,7 +59,7 @@ export const formatCorrelativities = (
     corrStruct: Correlativities,
     dictionary: SubjectsDictionary
 ): FormattedCorrelativities => {
-    let formattedCorr: FormattedCorrelativities = {
+    const formattedCorr: FormattedCorrelativities = {
         regularized: "",
         approved: "",
     };
@@ -177,3 +177,29 @@ export const hideCorrelativities = (subjectArr: Subject[]): void => {
         }
     });
 };
+
+/*
+Estadisticas y Etc
+*/
+
+// Devuelve la cantidad de materias en un status determinado dentro de un careerData
+export const totalStatus = (careerData: CareerData, status: SubjectStatus): number => {
+    return careerData.subjects.filter(subject => subject.personal.status === status).length;
+};
+
+// Devuelve promedio de las notas
+export const getAverageGrade = (careerData: CareerData): number => {
+    const subjWithGrade = careerData.subjects.filter(
+        (subject) => subject.personal.qualification > 0
+    );
+    // Evitar división por cero
+    if (subjWithGrade.length === 0) return 0;
+
+    const total = subjWithGrade.reduce(
+        (sum, subject) => sum + subject.personal.qualification,
+        0
+    );
+
+    return total / subjWithGrade.length;
+};
+

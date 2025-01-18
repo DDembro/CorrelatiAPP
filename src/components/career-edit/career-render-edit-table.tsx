@@ -9,7 +9,7 @@ const CareerRenderEditTable = (careerData:CareerData, handleOnContextMenu:any) =
     const years = careerData.years;
     const subjects = careerData.subjects;
 
-    let subjectsDictionary = initiateSubjectsDictionary(subjects);
+    const subjectsDictionary = initiateSubjectsDictionary(subjects);
 
     const sortedSubjects = sortSubjects(subjects, years);
 

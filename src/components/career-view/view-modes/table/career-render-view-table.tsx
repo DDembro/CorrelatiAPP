@@ -1,5 +1,5 @@
 import React from "react";
-import { CareerData, Subject } from "@/types/career-view-types";
+import { CareerData } from "@/types/career-view-types";
 
 import { initiateSubjectsDictionary, sortSubjects } from "@/lib/subjectsUtils";
 import RenderViewSubjects from "./carrer-subjects-view-table";

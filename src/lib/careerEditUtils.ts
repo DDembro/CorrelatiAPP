@@ -87,7 +87,7 @@ export const changeSubjectInfo = (
     duration?: number,
     weeklyLoad?: number,
 ) => {
-    let info = subject.info;
+    const info = subject.info;
     if (modality !== undefined) info.modality = modality;
     if (name !== undefined) info.name = name;
     if (altname !== undefined) info.altname = altname;
@@ -145,7 +145,6 @@ export const changeSubjectYear = (
     careerData: CareerData,
     subject: Subject,
     newYear: number,
-    newIndex: number | null = null // Opcional: índice en el nuevo año
 ) => {  
     if (newYear > careerData.years) {
         alert("El año de la materia no puede superar la cantidad de años de la carrera");
@@ -155,7 +154,6 @@ export const changeSubjectYear = (
         alert("El año de la materia no puede ser menor a 1");
         throw new Error("El año de la materia no puede ser menor a 1");
     }
-    subject.index = -1;
     subject.info.year = newYear;
 
     saveLocalCareerData(careerData, true);

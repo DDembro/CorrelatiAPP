@@ -1,25 +1,23 @@
 import React from "react";
 import {
-    checkCanEnroll,
     formatCorrelativities,
     showSubjectInfo,
+    SubjectsDictionary,
 } from "@/lib/subjectsUtils";
 import { Duration, Modality, Subject } from "@/types/career-view-types";
 
 const RenderEditSubjects = (
-    subjectArr: any, 
-    dictionary: any, 
+    subjectArr: Subject[], 
+    dictionary: SubjectsDictionary, 
     handleOnContextMenu: any,
     handleDragStart: (subject: Subject) => void
 ) => {
-    let subjectsCards: React.JSX.Element[] = [];
+    const subjectsCards: React.JSX.Element[] = [];
 
     subjectArr.forEach((subject: Subject, index: number) => {
         subject.index = index; // Actualiza el indice
 
         const info = subject.info;
-        const personal = subject.personal;
-        const canEnroll = checkCanEnroll(subject, dictionary);
 
         const correlativities = formatCorrelativities(info.correlativities, dictionary);
         const duration = Duration[info.duration];

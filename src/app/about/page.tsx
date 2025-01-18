@@ -13,7 +13,8 @@ const AboutPage = () => {
                 <p className="mb-4 leading-relaxed">
                     Este proyecto es una iniciativa independiente creada por{' '}
                     <span className="font-bold text-blue-500">Nicolas Dembrowky</span>, estudiante de Ingeniería en Sistemas en la UTN FRBA.
-                    El propósito de esta aplicación es brindar a los estudiantes de cualquier carrera y universidad la posibilidad de:
+                    El propósito de esta aplicación es brindar a los estudiantes de cualquier carrera y universidad la posibilidad de gestionar
+                    sus estudios de forma practica y comoda.
                 </p>
 
                 {/* Footer */}
@@ -39,7 +40,7 @@ const AboutPage = () => {
                 </a>
 
                 <p className="mt-6">
-                    Agradecimientos a los testers: TODO
+                    Agradecimientos a todos aquellos BetaTesters que probaron la pagina antes de su salida oficial!
                 </p>
             </div>
         </div>

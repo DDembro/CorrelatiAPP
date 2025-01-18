@@ -1,10 +1,14 @@
 import React, { useState } from "react";
-import { showAllSubjectInfo, hideAllSubjectInfo, initiateSubjectsDictionary } from "@/lib/subjectsUtils";
 import Link from "next/link";
 import { downloadCareerData, saveLocalCareerData } from "@/lib/careerEditUtils";
 import EditCareerModal from "../modal/edit-career-modal";
+import { CareerData } from "@/types/career-view-types";
 
-const CareerEditNav = ({ careerData }: any) => {
+interface CareerEditNavProps {
+    careerData: CareerData;
+}
+
+const CareerEditNav: React.FC<CareerEditNavProps> = ({ careerData }) => {
     // Estado para controlar la visibilidad del modal
     const [isModalOpen, setIsModalOpen] = useState(false);
 

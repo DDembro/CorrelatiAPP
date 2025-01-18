@@ -2,17 +2,19 @@
     {
         "name":"Plantilla Tutorial",
         "author":"Nicolas Dembrowky",
+        "date":"2025-01-15T12:00:00.000Z",
         "college":"NA",
         "description":"Descarga esta plantilla y usala en Ver Mi Carrera",
         "color":"bg-teal-600",
-        "file":"plantilla_tutorial.json"
+        "file":"Plantilla Tutorial.json"
     },
     {
         "name":"Ingeniería en Sistemas",
         "author":"Nicolas Dembrowky",
+        "date":"2025-01-15T12:00:00.000Z",
         "college":"UTN",
-        "description":"Plan 2023 k23",
+        "description":"Plan de estudios 2023 k23",
         "color":"bg-blue-600",
-        "file":"ing_sistemas_utn.json"
+        "file":"Ing en sistemas UTN.json"
     }
 ]

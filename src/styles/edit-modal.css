@@ -2,13 +2,13 @@
     @apply fixed inset-0 bg-gray-900 bg-opacity-70 flex justify-center items-center z-50;
 }
 .modal-content {
-    @apply bg-white p-8 rounded-2xl shadow-2xl w-full max-w-lg transform transition-transform scale-105;
+    @apply bg-white p-8 flex flex-col max-h-screen overflow-hidden text-gray-800 rounded-2xl shadow-2xl w-full max-w-lg transform transition-transform scale-105;
 }
 .modal-title {
     @apply text-2xl font-semibold text-gray-800 mb-6 text-center;
 }
 .modal-fields {
-    @apply space-y-6;
+    @apply space-y-6 flex-1 overflow-auto;
 }
 .modal-field {
     @apply flex flex-col space-y-2;

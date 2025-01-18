@@ -3,11 +3,12 @@ import {
     checkCanEnroll,
     formatCorrelativities,
     showSubjectInfo,
+    SubjectsDictionary,
 } from "@/lib/subjectsUtils";
 import { Duration, Modality, Subject, SubjectStatus } from "../../../../types/career-view-types";
 
-const RenderViewSubjects = (subjectArr: any, dictionary: any, handleOnContextMenu: any) => {
-    let subjectsCards: React.JSX.Element[] = [];
+const RenderViewSubjects = (subjectArr: Subject[], dictionary: SubjectsDictionary, handleOnContextMenu: any) => {
+    const subjectsCards: React.JSX.Element[] = [];
 
     subjectArr.forEach((subject: Subject, index: number) => {
         subject.index = index; // Actualiza el indice

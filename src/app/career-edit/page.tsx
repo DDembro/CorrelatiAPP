@@ -32,7 +32,7 @@ const CareerEditPage = () => {
         <div className="p-2">
             <CareerEditNav careerData={careerData} />
             <div>
-                <CareerEditTable carrerData={careerData} />
+                <CareerEditTable careerData={careerData} />
             </div>
         </div>
     );
