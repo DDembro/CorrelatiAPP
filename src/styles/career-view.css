@@ -1,4 +1,4 @@
-.main-container {
+.view-container {
     @apply p-4 flex flex-row items-center bg-gray-100 rounded-lg shadow-md text-white
 }
 

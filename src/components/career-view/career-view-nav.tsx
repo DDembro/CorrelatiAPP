@@ -28,7 +28,7 @@ const CareerViewNav = ({ careerData, viewMode, setViewMode }: any) => {
     saveLocalCareerData(careerData);
 
     return (
-        <div className="main-container">
+        <div className="view-container">
             <button
                 onClick={() => returnAction()}
                 className="option-button bg-blue-500 hover:bg-blue-700"

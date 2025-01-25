@@ -11,8 +11,8 @@ const AboutPage = () => {
 
                 {/* Main Content */}
                 <p className="mb-4 leading-relaxed">
-                    Este proyecto es una iniciativa independiente creada por{' '}
-                    <span className="font-bold">Nicolas Dembrowky</span>, estudiante de Ingeniería en Sistemas en la UTN FRBA.
+                    Este proyecto es una iniciativa de código abierto creada por{' '}
+                    <span className="font-bold">Nicolas Dembrowky</span>, estudiante de Ingeniería en Sistemas en la UTN FRBA.<br />
                     El propósito de esta aplicación es brindar a los estudiantes de cualquier carrera y universidad la posibilidad de gestionar
                     sus estudios de forma practica y comoda.
                 </p>
@@ -55,6 +55,15 @@ const AboutPage = () => {
                     className="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition mt-6 mx-6"
                 >
                     Ver Portafolio
+                </a>
+
+                <a
+                    href="https://github.com/DDembro/CorrelatiAPP"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition mt-6 mx-6"
+                >
+                    Ver en GitHub
                 </a>
 
             </div>
