@@ -15,7 +15,7 @@
 }
 
 @media (max-width: 1020px) {
-    .main-container {
+    .view-container {
         @apply flex-wrap items-start p-3; /* Cambia la disposición a columnas y ajusta el padding */
     }
 
