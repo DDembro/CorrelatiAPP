@@ -9,8 +9,8 @@ export default function MainPage() {
       <div className="content-container">
         {/* Header */}
         <h1>
-          Bienvenido a CorrelatiAPP<br />
-          Tu Editor de Planes de Estudio<br />
+          Bienvenido a CorrelatiAPP.<br />
+          Tu editor de planes de estudio<br />
           🎓
         </h1>
 
@@ -23,22 +23,22 @@ export default function MainPage() {
         {/* Features List */}
         <ul className="mt-6 space-y-3 list-disc list-inside text-gray-700">
           <li>
-            <span className="font-semibold">Organiza</span> y sigue tu carrera paso a paso.
+            <span className="font-semibold">Organiza</span> y sigue tu carrera paso a paso
           </li>
           <li>
-            <span className="font-semibold">Crea</span> planes de estudio personalizados adaptados a tus necesidades.
+            <span className="font-semibold">Crea</span> planes de estudio personalizados adaptados a tus necesidades
           </li>
         </ul>
 
         {/* CARDS */}
-        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 p-6">
+        <div className="card-container">
           {/* Card 1 */}
-          <div className="card-container">
+          <div className="card">
             <h2 className="text-lg font-bold text-gray-800 mb-4">
               Tutorial
             </h2>
             <p className="text-gray-600 mb-4">
-              Descarga la plantilla Tutorial para aprender las nociones basicas de la App.
+              Descarga la plantilla Tutorial para aprender las nociones básicas de la app.
             </p>
             <Link
               href="/template"
@@ -49,12 +49,12 @@ export default function MainPage() {
           </div>
 
           {/* Card 2 */}
-          <div className="card-container">
+          <div className="card">
             <h2 className="text-lg font-bold text-gray-800 mb-4">
               Dejar tu comentario
             </h2>
             <p className="text-gray-600 mb-4">
-              Completa el siguiente formulario para dar tu opinion sobre la pagina.
+              Completa el siguiente formulario para dar tu opinión sobre la página.
             </p>
             <a
               href="https://forms.gle/Hve3WEhUxm81Cqr59"

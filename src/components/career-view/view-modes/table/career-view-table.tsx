@@ -26,7 +26,7 @@ const CareerViewTable: React.FC<CareerViewTableProps> = ({ careerData }) => {
 
     return (
         <>
-            <div className="p-2 flex divide-x-2 divide-gray-400 justify-center">
+            <div className="p-2 flex justify-center flex-wrap">
                 {CareerRenderViewTable(careerData, handleContextMenu)}
             </div>
 

@@ -12,7 +12,7 @@ const ListViewCareer: React.FC<ListViewCareerProps> = ({ careerData }) => {
     return (
         <div className="bg-slate-300 w-full p-2 flex flex-col divide-y-2 divide-gray-400">
             Titulo: {careerData.title} <br />
-            La vista de tabla aun esta incompleta
+            La vista de Lista aun esta incompleta
         </div>
     )
 }

@@ -1,0 +1,48 @@
+.navbar {
+    @apply bg-gradient-to-r from-blue-500 to-indigo-500 px-6 py-4 text-white shadow-md sticky top-0 z-50;
+}
+
+.navbar-container {
+    @apply container mx-auto flex items-center relative;
+}
+
+.navbar-logo-div {
+    @apply absolute left-0;
+}
+
+.navbar-logo {
+    @apply text-2xl font-extrabold tracking-tight hover:text-indigo-200 transition-colors;
+}
+
+.navbar-links {
+    @apply mx-auto flex space-x-4;
+}
+
+.navbar-link {
+    @apply px-3 py-2 rounded-md text-white hover:bg-indigo-600 transition-colors;
+}
+
+@media (max-width: 1024px) {
+    .navbar-logo-div {
+        @apply relative;
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .navbar-container {
+        @apply flex-col space-y-4 text-center; /* Apila los elementos */
+    }
+
+    .navbar-links {
+        @apply flex flex-wrap space-x-0; /* Cambia los enlaces a columna */
+    }
+
+    .navbar-logo-div {
+        @apply mb-2; /* Agrega margen inferior al logo */
+    }
+
+    .navbar-link {
+        @apply text-base; /* Reduce el tamaño de texto para móvil */
+    }
+}

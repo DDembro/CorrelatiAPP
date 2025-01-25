@@ -1,10 +1,10 @@
 [
     {
-        "name":"Plantilla Tutorial",
+        "name":"Plantilla tutorial",
         "author":"Nicolas Dembrowky",
         "date":"2025-01-15T12:00:00.000Z",
-        "college":"NA",
-        "description":"Descarga esta plantilla y usala en Ver Mi Carrera",
+        "college":"Tutorial",
+        "description":"Descarga esta plantilla y úsala en Ver Mi Carrera.",
         "color":"bg-teal-600",
         "file":"Plantilla Tutorial.json"
     },
@@ -13,8 +13,17 @@
         "author":"Nicolas Dembrowky",
         "date":"2025-01-15T12:00:00.000Z",
         "college":"UTN",
-        "description":"Plan de estudios 2023 k23",
+        "description":"Plan de estudios K23 sin electivas.",
         "color":"bg-blue-600",
         "file":"Ing en sistemas UTN.json"
+    },
+    {
+        "name":"Ciencias de la Computación",
+        "author":"Matias Guerrero",
+        "date":"2025-01-25T12:00:00.000Z",
+        "college":"UBA",
+        "description":"Plan estudio de 5 años.",
+        "color":"bg-red-600",
+        "file":"Ciencias de la Computación.json"
     }
 ]

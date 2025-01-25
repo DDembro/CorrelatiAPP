@@ -57,30 +57,31 @@ const CareerEditTable: React.FC<CareerEditTableProps> = ({ careerData }) => {
 
     return (
         <>
-            <div className="p-2 flex divide-x-2 divide-gray-400 justify-center">
+            <div className="p-2 flex justify-center flex-wrap">
                 {CareerRenderEditTable(careerData, handleContextMenu)}
-                {selectedSubject && (
-                    <EditSubjectModal
-                        subject={selectedSubject}
-                        careerData={careerData}
-                        onClose={closeEditModal}
-                    />
-                )}
-                {editCorrelativesSubject && (
-                    <EditCorrelativesModal
-                        subject={editCorrelativesSubject}
-                        careerData={careerData}
-                        onClose={closeEditCorrelativesModal}
-                    />
-                )}
-                {reorderSubject && (
-                    <ReorderSubject
-                        subject={reorderSubject}
-                        careerData={careerData}
-                        onClose={closeReorderModal}
-                    />
-                )}
             </div>
+
+            {selectedSubject && (
+                <EditSubjectModal
+                    subject={selectedSubject}
+                    careerData={careerData}
+                    onClose={closeEditModal}
+                />
+            )}
+            {editCorrelativesSubject && (
+                <EditCorrelativesModal
+                    subject={editCorrelativesSubject}
+                    careerData={careerData}
+                    onClose={closeEditCorrelativesModal}
+                />
+            )}
+            {reorderSubject && (
+                <ReorderSubject
+                    subject={reorderSubject}
+                    careerData={careerData}
+                    onClose={closeReorderModal}
+                />
+            )}
 
             <ContextMenu
                 contextMenuRef={contextMenuRef}

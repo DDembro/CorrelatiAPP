@@ -1,41 +1,30 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from 'next/link';
+import React from 'react';
+import '../../styles/header.css';
 
 const Header = () => {
     return (
-        <nav className="bg-gradient-to-r from-blue-500 to-indigo-500 px-6 py-4 text-white shadow-md sticky top-0 z-50">
-            <div className="container mx-auto flex items-center relative">
+        <nav className='navbar'>
+            <div className='navbar-container'>
                 {/* Logo / Title (izquierda) */}
-                <div className="absolute left-0">
-                    <Link href="/" className="text-2xl font-extrabold tracking-tight hover:text-indigo-200 transition-colors">
+                <div className='navbar-logo-div'>
+                    <Link href="/" className='navbar-logo'>
                         CorrelatiAPP
                     </Link>
                 </div>
 
                 {/* Navigation Links (centrado) */}
-                <div className="mx-auto flex space-x-4">
-                    <Link
-                        href="/"
-                        className="px-3 py-2 rounded-md text-white hover:bg-indigo-600 transition-colors"
-                    >
+                <div className='navbar-links'>
+                    <Link href="/" className='navbar-link'>
                         Home
                     </Link>
-                    <Link
-                        href="/career-view"
-                        className="px-3 py-2 rounded-md text-white hover:bg-indigo-600 transition-colors"
-                    >
+                    <Link href="/career-view" className='navbar-link'>
                         Ver Mi Carrera
                     </Link>
-                    <Link
-                        href="/template"
-                        className="px-3 py-2 rounded-md text-white hover:bg-indigo-600 transition-colors"
-                    >
+                    <Link href="/template" className='navbar-link'>
                         Plantillas
                     </Link>
-                    <Link
-                        href="/about"
-                        className="px-3 py-2 rounded-md text-white hover:bg-indigo-600 transition-colors"
-                    >
+                    <Link href="/about" className='navbar-link'>
                         Sobre La App
                     </Link>
                 </div>
