@@ -56,7 +56,7 @@ const TemplatePage = () => {
                 ).map(([college, careersInCollege]) => (
                     <div key={college} className="mb-10">
                         {/* Línea horizontal entre categorías */}
-                        <hr className="mb-8 border-t-2 border-gray-400 w-full" />
+                        <hr className="mb-8 border-t-2 border-gray-400 dark:border-slate-800 w-full" />
                         {/* Título de la institución */}
                         <h1 className="text-3xl text-left">Institución: {college}</h1>
                         <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -64,7 +64,7 @@ const TemplatePage = () => {
                             {careersInCollege.map((career) => (
                                 <div
                                     key={career.name}
-                                    className={`flex flex-col h-full relative overflow-hidden ${career.color} text-slate-100 shadow-lg rounded-xl p-6 border hover:shadow-xl transition-shadow`}
+                                    className={`flex flex-col h-full relative overflow-hidden ${career.color} text-slate-100 shadow-lg rounded-xl p-6 border hover:shadow-xl dark:border-slate-800 transition-shadow`}
                                 >
                                     <div className="relative z-10 flex-grow">
                                         <h2 className="text-2xl font-bold mb-2">{career.name}</h2>
@@ -80,7 +80,7 @@ const TemplatePage = () => {
                                     </div>
                                     <button
                                         onClick={() => handleDownload(career.file)}
-                                        className="mt-auto bg-slate-100 text-slate-800 font-semibold py-2 px-4 rounded-lg shadow hover:scale-105 hover:bg-slate-200 transition-transform duration-200"
+                                        className="mt-auto bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-100 font-semibold py-2 px-4 rounded-lg shadow hover:scale-105 hover:bg-slate-200 dark:hover:bg-slate-800 transition-transform duration-200"
                                     >
                                         Descargar
                                     </button>
@@ -89,7 +89,7 @@ const TemplatePage = () => {
                         </div>
                     </div>
                 ))}
-                <hr className="mb-8 border-t-2 border-gray-400 w-full" />
+                <hr className="mb-8 border-t-2 border-gray-400 dark:border-slate-800 w-full" />
                 <div>
                     ¿No encuentras tu carrera? ¡Puedes usar las plantillas disponibles para crear tu plan de estudios! <br />
                     Será muy apreciado si pudieras enviar el archivo de la carrera, así es añadido a la página como una plantilla nueva.<br />

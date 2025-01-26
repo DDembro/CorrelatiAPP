@@ -20,7 +20,7 @@ const CareerRenderViewTable = (carrerData:CareerData, handleOnContextMenu:any) =
                 key={`year-${i}`}
                 className="px-2 w-64 divide-y-2 divide-gray-400 divide-dashed"
             >
-                <div className="text-center">
+                <div className="text-center dark:text-gray-300">
                     <strong>Año {i + 1}</strong>
                 </div>
                 <div>

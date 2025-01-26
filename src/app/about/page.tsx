@@ -24,7 +24,7 @@ const AboutPage = () => {
                         href="https://www.linkedin.com/in/dembrowkynicolas/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="font-bold text-indigo-600 hover:underline"
+                        className="font-bold text-indigo-600 dark:text-indigo-400 hover:underline"
                     >
                         perfil de LinkedIn
                     </a>
@@ -33,7 +33,7 @@ const AboutPage = () => {
                         href="https://dembrowky-nicolas-portfolioweb.web.app/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="font-bold text-indigo-600 hover:underline"
+                        className="font-bold text-indigo-600 dark:text-indigo-400 hover:underline"
                     >
                         Portafolio Web
                     </a>.

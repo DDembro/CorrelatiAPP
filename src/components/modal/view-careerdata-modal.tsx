@@ -31,7 +31,7 @@ const ViewCareerDataModal: React.FC<ReorderSubjectProps> = ({ careerData, onClos
         <div className="modal-overlay">
             <div className="modal-content">
                 <h2 className="modal-title">Datos de {careerData.title}</h2>
-                <div className="modal-fields bg-gray-200 p-4 rounded-lg">
+                <div className="modal-fields bg-gray-200 dark:bg-gray-700 p-4 rounded-lg">
                     <div className="flex gap-4">
                         <div className="flex-1">
                             <p><strong>Autor:</strong></p>

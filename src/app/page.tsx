@@ -21,7 +21,7 @@ export default function MainPage() {
         </p>
 
         {/* Features List */}
-        <ul className="mt-6 space-y-3 list-disc list-inside text-gray-700">
+        <ul className="mt-6 space-y-3 list-disc list-inside text-gray-700 dark:text-gray-300">
           <li>
             <span className="font-semibold">Organiza</span> y sigue tu carrera paso a paso
           </li>
@@ -34,7 +34,7 @@ export default function MainPage() {
         <div className="card-container">
           {/* Card 1 */}
           <div className="card">
-            <h2 className="text-lg font-bold text-gray-800 mb-4">
+            <h2 className="text-lg font-bold text-gray-800 mb-4 dark:text-gray-200">
               Tutorial
             </h2>
             <p className="text-gray-600 mb-4">
@@ -50,10 +50,10 @@ export default function MainPage() {
 
           {/* Card 2 */}
           <div className="card">
-            <h2 className="text-lg font-bold text-gray-800 mb-4">
+            <h2 className="text-lg font-bold text-gray-800 mb-4 dark:text-gray-200">
               Dejar tu comentario
             </h2>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-4 dark:text-gray-300">
               Completa el siguiente formulario para dar tu opinión sobre la página.
             </p>
             <a

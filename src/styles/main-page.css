@@ -1,17 +1,19 @@
 .main-container {
-    @apply p-6 flex flex-col items-center justify-center text-gray-800;
+    @apply p-6 flex flex-col items-center justify-center text-gray-800 dark:bg-slate-800;
 }
 
 .content-container {
-    @apply bg-slate-50 rounded-lg w-3/4 shadow-lg p-6 text-center;
+
+    @apply bg-slate-50 rounded-lg w-3/4 shadow-lg p-6 text-center dark:bg-slate-700 dark:text-white;
 }
 
 .card-container {
-    @apply grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 p-6; /* Aumenta las columnas en pantallas más grandes */
+    @apply grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 p-6;
+    /* Aumenta las columnas en pantallas más grandes */
 }
 
 .card {
-    @apply bg-indigo-50 shadow-lg rounded-lg p-6 border border-gray-200;
+    @apply bg-indigo-50 shadow-lg rounded-lg p-6 border border-gray-200 dark:bg-slate-800 dark:border-gray-800;
 }
 
 .card-btn {
@@ -19,32 +21,38 @@
 }
 
 h1 {
-    @apply text-3xl font-bold text-indigo-600 mb-4;
+    @apply text-3xl font-bold text-indigo-600 mb-4 dark:text-indigo-400;
 }
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
     .main-container {
-        @apply p-4; /* Ajusta el padding en diferentes pantallas */
+        @apply p-4;
+        /* Ajusta el padding en diferentes pantallas */
     }
-    
+
     .content-container {
-        @apply w-full; /* Cambia el ancho en función del tamaño de pantalla */
+        @apply w-full;
+        /* Cambia el ancho en función del tamaño de pantalla */
     }
-    
+
     .card-container {
-        @apply gap-4; /* Ajusta el espacio entre los elementos */
+        @apply gap-4;
+        /* Ajusta el espacio entre los elementos */
     }
-    
+
     .card {
-        @apply p-4; /* Cambia el padding en diferentes tamaños */
+        @apply p-4;
+        /* Cambia el padding en diferentes tamaños */
     }
-    
+
     .card-btn {
-        @apply py-1 md:px-3; /* Ajusta el tamaño del botón */
+        @apply py-1 md:px-3;
+        /* Ajusta el tamaño del botón */
     }
-    
+
     h1 {
-        @apply text-2xl; /* Modifica el tamaño del texto según la pantalla */
+        @apply text-2xl;
+        /* Modifica el tamaño del texto según la pantalla */
     }
 }
