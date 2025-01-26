@@ -67,6 +67,25 @@ const AboutPage = () => {
                 </a>
 
             </div>
+
+            <div className="content-container mt-6">
+                <h1>Colaboradores</h1>
+
+                <div className='p-4 bg-indigo-100 dark:bg-slate-800 shadow-lg rounded-lg max-w-xs mx-auto flex flex-col items-start space-y-2'>
+                    <div className="flex items-center w-full">
+                        <p className="text-lg font-semibold">Joaquín Giordano:</p>
+                        <a
+                            href="https://github.com/JoaquinGiordano"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="ml-3 font-bold text-indigo-600 dark:text-indigo-400 hover:underline"
+                        >
+                            GitHub
+                        </a>
+                    </div>
+                    <p className="">Modo oscuro para la página</p>
+                </div>
+            </div>
         </div>
     );
 };
