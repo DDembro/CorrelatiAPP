@@ -32,24 +32,18 @@ export default function MainPage() {
                     </li>
                 </ul>
 
-        {/* CARDS */}
-        <div className="card-container">
-          {/* Card 1 */}
-          <div className="card">
-            <h2 className="text-lg font-bold text-gray-800 mb-4 dark:text-gray-200">
-              Tutorial
-            </h2>
-            <p className="text-gray-600 mb-4 dark:text-gray-300">
-              Descarga la plantilla Tutorial para aprender las nociones básicas de la app.
-            </p>
-            <Link
-              href="/template"
-              className="card-btn"
-            >
-              Ver en Plantillas
-            </Link>
-          </div>
-
+                {/* CARDS */}
+                <div className="card-container">
+                    {/* Card 1 */}
+                    <div className="card">
+                        <h2 className="text-lg font-bold text-gray-800 mb-4 dark:text-gray-200">Tutorial</h2>
+                        <p className="text-gray-600 mb-4 dark:text-gray-300">
+                            Descarga la plantilla Tutorial para aprender las nociones básicas de la app.
+                        </p>
+                        <Link href="/template" className="card-btn">
+                            Ver en Plantillas
+                        </Link>
+                    </div>
                     {/* Card 2 */}
                     <div className="card">
                         <h2 className="text-lg font-bold text-gray-800 mb-4 dark:text-gray-200">Dejar tu comentario</h2>
