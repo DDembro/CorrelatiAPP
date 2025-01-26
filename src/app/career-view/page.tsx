@@ -7,6 +7,8 @@ import CareerViewNav from "@/components/career-view/career-view-nav";
 import CareerViewUpload from "@/components/career-view/career-view-upload";
 import { CareerData } from "@/types/career-view-types";
 import { getLocalCareerData, isValidCareerData } from "@/lib/careerEditUtils";
+import CareerCreate from "@/app/career-created/page";
+
 
 const CareerViewPage = () => {
     const [viewMode, setViewMode] = useState(true); // Tabla o Lista
@@ -41,6 +43,8 @@ const CareerViewPage = () => {
     if (!careerData) {
         return (
             <div className="p-2">
+                <CareerCreate/>
+
                 <CareerViewUpload onFileUpload={handleFileUpload} />
             </div>
         );
