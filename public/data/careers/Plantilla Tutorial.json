@@ -17,12 +17,8 @@
                 "year": 2,
                 "description": "En modo editar, puedes cambiar tanto las materias como la información general de la Carrera! ",
                 "correlativities": {
-                    "regularized": [
-                        1
-                    ],
-                    "approved": [
-                        2
-                    ]
+                    "regularized": [1],
+                    "approved": [2]
                 }
             },
             "personal": {
@@ -63,12 +59,8 @@
                 "year": 3,
                 "description": "Y suéltame en otro año!",
                 "correlativities": {
-                    "regularized": [
-                        2
-                    ],
-                    "approved": [
-                        3
-                    ]
+                    "regularized": [2],
+                    "approved": [3]
                 }
             },
             "personal": {
@@ -109,14 +101,8 @@
                 "year": 3,
                 "description": "También puedes cambiarlas!",
                 "correlativities": {
-                    "regularized": [
-                        1,
-                        2
-                    ],
-                    "approved": [
-                        3,
-                        4
-                    ]
+                    "regularized": [1, 2],
+                    "approved": [3, 4]
                 }
             },
             "personal": {
@@ -157,12 +143,8 @@
                 "year": 3,
                 "description": "Todos los cambios estan guardados en tu navegador (hasta que tu mismo salgas de una carrera). Por lo que es ALTAMENTE recomendable que una vez editada o modificada una carrera, descargues la ultima versión!",
                 "correlativities": {
-                    "regularized": [
-                        1
-                    ],
-                    "approved": [
-                        4
-                    ]
+                    "regularized": [1],
+                    "approved": [4]
                 }
             },
             "personal": {

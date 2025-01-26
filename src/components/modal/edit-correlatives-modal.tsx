@@ -8,11 +8,7 @@ interface EditCorrelativesModalProps {
     onClose: () => void;
 }
 
-const EditCorrelativesModal: React.FC<EditCorrelativesModalProps> = ({
-    subject,
-    careerData,
-    onClose,
-}) => {
+const EditCorrelativesModal: React.FC<EditCorrelativesModalProps> = ({ subject, careerData, onClose }) => {
     const [regularizedSubjects, setRegularizedSubjects] = useState<Set<string>>(
         new Set(subject.info.correlativities.regularized)
     );
@@ -20,10 +16,7 @@ const EditCorrelativesModal: React.FC<EditCorrelativesModalProps> = ({
         new Set(subject.info.correlativities.approved)
     );
 
-    const handleCheckboxChange = (
-        sid: string,
-        targetSet: SubjectStatus.Regularizado | SubjectStatus.Aprobado
-    ) => {
+    const handleCheckboxChange = (sid: string, targetSet: SubjectStatus.Regularizado | SubjectStatus.Aprobado) => {
         if (targetSet === SubjectStatus.Regularizado) {
             if (regularizedSubjects.has(sid)) {
                 setRegularizedSubjects((prev) => {
@@ -87,28 +80,26 @@ const EditCorrelativesModal: React.FC<EditCorrelativesModalProps> = ({
                                         {s.info.altname} - {s.info.name}
                                     </td>
                                     <td
-                                        className={`border border-gray-300 text-center ${regularizedSubjects.has(s.sid) ? "bg-yellow-200" : ""
-                                            }`}
+                                        className={`border border-gray-300 text-center ${
+                                            regularizedSubjects.has(s.sid) ? "bg-yellow-200" : ""
+                                        }`}
                                     >
                                         <input
                                             type="checkbox"
                                             checked={regularizedSubjects.has(s.sid)}
-                                            onChange={() =>
-                                                handleCheckboxChange(s.sid, SubjectStatus.Regularizado)
-                                            }
+                                            onChange={() => handleCheckboxChange(s.sid, SubjectStatus.Regularizado)}
                                             className="w-5 h-5 cursor-pointer align-middle"
                                         />
                                     </td>
                                     <td
-                                        className={`border border-gray-300 text-center ${approvedSubjects.has(s.sid) ? "bg-green-200" : ""
-                                            }`}
+                                        className={`border border-gray-300 text-center ${
+                                            approvedSubjects.has(s.sid) ? "bg-green-200" : ""
+                                        }`}
                                     >
                                         <input
                                             type="checkbox"
                                             checked={approvedSubjects.has(s.sid)}
-                                            onChange={() =>
-                                                handleCheckboxChange(s.sid, SubjectStatus.Aprobado)
-                                            }
+                                            onChange={() => handleCheckboxChange(s.sid, SubjectStatus.Aprobado)}
                                             className="w-5 h-5 cursor-pointer align-middle"
                                         />
                                     </td>
@@ -118,16 +109,10 @@ const EditCorrelativesModal: React.FC<EditCorrelativesModalProps> = ({
                     </table>
                 </div>
                 <div className="modal-actions">
-                    <button
-                        onClick={onClose}
-                        className="modal-button modal-cancel-button"
-                    >
+                    <button onClick={onClose} className="modal-button modal-cancel-button">
                         Cancelar
                     </button>
-                    <button
-                        onClick={handleSave}
-                        className="modal-button modal-save-button"
-                    >
+                    <button onClick={handleSave} className="modal-button modal-save-button">
                         Guardar
                     </button>
                 </div>

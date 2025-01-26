@@ -1,10 +1,5 @@
 import React from "react";
-import {
-    checkCanEnroll,
-    formatCorrelativities,
-    showSubjectInfo,
-    SubjectsDictionary,
-} from "@/lib/subjectsUtils";
+import { checkCanEnroll, formatCorrelativities, showSubjectInfo, SubjectsDictionary } from "@/lib/subjectsUtils";
 import { Duration, Modality, Subject, SubjectStatus } from "../../../../types/career-view-types";
 
 const RenderViewSubjects = (subjectArr: Subject[], dictionary: SubjectsDictionary, handleOnContextMenu: any) => {
@@ -35,12 +30,12 @@ const RenderViewSubjects = (subjectArr: Subject[], dictionary: SubjectsDictionar
                         personal.status === SubjectStatus.Promocionado
                             ? "bg-green-700 dark:bg-green-900" // Promoted
                             : personal.status === SubjectStatus.Aprobado
-                            ? "bg-green-600 dark:bg-green-700" // Approved
-                            : personal.status === SubjectStatus.Regularizado
-                            ? "bg-yellow-500 dark:bg-yellow-700" // Regularized
-                            : canEnroll
-                            ? "bg-indigo-500 dark:bg-indigo-700" // Can Enroll
-                            : "bg-stone-400 dark:bg-stone-600"  // Default
+                              ? "bg-green-600 dark:bg-green-700" // Approved
+                              : personal.status === SubjectStatus.Regularizado
+                                ? "bg-yellow-500 dark:bg-yellow-700" // Regularized
+                                : canEnroll
+                                  ? "bg-indigo-500 dark:bg-indigo-700" // Can Enroll
+                                  : "bg-stone-400 dark:bg-stone-600" // Default
                     }`}
                 >
                     <h3 className="text-lg">{info.name}</h3>

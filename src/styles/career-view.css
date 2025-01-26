@@ -1,17 +1,17 @@
 .view-container {
-    @apply p-4 flex flex-row items-center bg-gray-100 rounded-lg shadow-md text-white dark:bg-slate-700
+    @apply p-4 flex flex-row items-center bg-gray-100 rounded-lg shadow-md text-white dark:bg-slate-700;
 }
 
 .option-button {
-    @apply font-medium px-4 py-2 mx-2 rounded-md shadow active:shadow-inner focus:outline-none min-w-min
+    @apply font-medium px-4 py-2 mx-2 rounded-md shadow active:shadow-inner focus:outline-none min-w-min;
 }
 
 .label {
-    @apply mx-6 text-xl font-semibold text-gray-700 dark:text-gray-300
+    @apply mx-6 text-xl font-semibold text-gray-700 dark:text-gray-300;
 }
 
 .edit-warning {
-    @apply hidden text-gray-700 bg-slate-400 p-1 m-2 self-center
+    @apply hidden text-gray-700 bg-slate-400 p-1 m-2 self-center;
 }
 
 @media (max-width: 1020px) {
@@ -22,7 +22,7 @@
 
     .option-button {
         @apply w-1/5 text-center mx-2 my-2
-        /* Botones más grandes que ocupan todo el ancho */
+        /* Botones más grandes que ocupan todo el ancho */;
     }
 
     .label {
@@ -31,10 +31,10 @@
     }
 
     .edit-button {
-        @apply hidden
+        @apply hidden;
     }
 
     .edit-warning {
-        @apply block
+        @apply block;
     }
 }

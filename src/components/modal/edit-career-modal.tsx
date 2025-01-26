@@ -34,7 +34,7 @@ const EditCareerModal: React.FC<EditCareerModalProps> = ({ careerData, onClose }
 
     // Guardar cambios y cerrar el modal
     const handleSave = () => {
-        const {title, author, years} = formValues;
+        const { title, author, years } = formValues;
         changeCareerInfo(careerData, title, author, years);
         onClose();
     };

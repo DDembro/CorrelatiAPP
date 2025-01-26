@@ -4,7 +4,7 @@ import { initiateSubjectsDictionary, sortSubjects } from "@/lib/subjectsUtils";
 import RenderEditSubjects from "./carrer-subjects-edit-table";
 import { changeSubjectYear } from "@/lib/careerEditUtils";
 
-const CareerRenderEditTable = (careerData:CareerData, handleOnContextMenu:any) => {
+const CareerRenderEditTable = (careerData: CareerData, handleOnContextMenu: any) => {
     const [draggedSubject, setDraggedSubject] = useState<Subject | null>(null);
     const years = careerData.years;
     const subjects = careerData.subjects;
@@ -47,11 +47,7 @@ const CareerRenderEditTable = (careerData:CareerData, handleOnContextMenu:any) =
                     </div>
 
                     {/* Div con las Materias */}
-                    <div
-                        className={`min-h-96 ${
-                            draggedSubject ? "bg-indigo-200" : ""
-                        }`}
-                    >
+                    <div className={`min-h-96 ${draggedSubject ? "bg-indigo-200" : ""}`}>
                         {RenderEditSubjects(
                             sortedSubjects[yearIndex],
                             subjectsDictionary,

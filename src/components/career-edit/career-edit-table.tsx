@@ -16,8 +16,7 @@ interface CareerEditTableProps {
 }
 
 const CareerEditTable: React.FC<CareerEditTableProps> = ({ careerData }) => {
-    const { contextMenuRef, contextMenu, handleContextMenu } =
-        useContextMenu(careerData);
+    const { contextMenuRef, contextMenu, handleContextMenu } = useContextMenu(careerData);
 
     const [selectedSubject, setSelectedSubject] = useState<Subject | null>(null);
     const [editCorrelativesSubject, setEditCorrelativesSubject] = useState<Subject | null>(null);
@@ -62,11 +61,7 @@ const CareerEditTable: React.FC<CareerEditTableProps> = ({ careerData }) => {
             </div>
 
             {selectedSubject && (
-                <EditSubjectModal
-                    subject={selectedSubject}
-                    careerData={careerData}
-                    onClose={closeEditModal}
-                />
+                <EditSubjectModal subject={selectedSubject} careerData={careerData} onClose={closeEditModal} />
             )}
             {editCorrelativesSubject && (
                 <EditCorrelativesModal
@@ -76,11 +71,7 @@ const CareerEditTable: React.FC<CareerEditTableProps> = ({ careerData }) => {
                 />
             )}
             {reorderSubject && (
-                <ReorderSubject
-                    subject={reorderSubject}
-                    careerData={careerData}
-                    onClose={closeReorderModal}
-                />
+                <ReorderSubject subject={reorderSubject} careerData={careerData} onClose={closeReorderModal} />
             )}
 
             <ContextMenu
@@ -107,8 +98,7 @@ const CareerEditTable: React.FC<CareerEditTableProps> = ({ careerData }) => {
                     { text: "", onClick: () => null, isSpacer: true },
                     {
                         text: "Mostrar Correlativas",
-                        onClick: (subject: Subject) =>
-                            showCorrelativities(careerData.subjects, subject),
+                        onClick: (subject: Subject) => showCorrelativities(careerData.subjects, subject),
                     },
                 ]}
             />

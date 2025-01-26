@@ -3,8 +3,7 @@ import { CareerData, Subject, SubjectStatus } from "@/types/career-view-types";
 // Guarda CareerData
 export const saveLocalCareerData = (careerData: CareerData, updateDate?: boolean) => {
     // En caso de ser una actualizacion al formato, se altera la fecha de ultima actualizacion antes de guardar
-    if(updateDate)
-        careerData.lastUpdateDate = new Date();
+    if (updateDate) careerData.lastUpdateDate = new Date();
 
     localStorage.setItem("careerData", JSON.stringify(careerData));
 };
@@ -22,12 +21,12 @@ export const deleteLocalCareerData = () => {
 // Valida un CareerData
 export const isValidCareerData = (data: CareerData): data is CareerData => {
     return (
-        data !== null 
-        && typeof data === "object"
-        && typeof data.title === "string"
-        && typeof data.author === "string"
-        && typeof data.years === "number"
-        && Array.isArray(data.subjects)
+        data !== null &&
+        typeof data === "object" &&
+        typeof data.title === "string" &&
+        typeof data.author === "string" &&
+        typeof data.years === "number" &&
+        Array.isArray(data.subjects)
     );
 };
 
@@ -85,7 +84,7 @@ export const changeSubjectInfo = (
     altname?: string,
     description?: string,
     duration?: number,
-    weeklyLoad?: number,
+    weeklyLoad?: number
 ) => {
     const info = subject.info;
     if (modality !== undefined) info.modality = modality;
@@ -99,12 +98,7 @@ export const changeSubjectInfo = (
 };
 
 /* Cambia los datos de la Carrera y los guarda */
-export const changeCareerInfo = (
-    careerData: CareerData,
-    title?: string,
-    author?: string,
-    years?: number,
-) => {
+export const changeCareerInfo = (careerData: CareerData, title?: string, author?: string, years?: number) => {
     if (title !== undefined) careerData.title = title;
     if (author !== undefined) careerData.author = author;
 
@@ -114,14 +108,10 @@ export const changeCareerInfo = (
 };
 
 /* Funcion auxiliar para cambiar los años de la carrera, ya que es un caso sencible */
-const changeCareerYears = (
-    careerData: CareerData,
-    yearsNewVal: number,
-) => {
-    if(careerData.years == yearsNewVal)
-        return; // Si el valor no cambio, sale sin hacer nada
+const changeCareerYears = (careerData: CareerData, yearsNewVal: number) => {
+    if (careerData.years == yearsNewVal) return; // Si el valor no cambio, sale sin hacer nada
 
-    if(yearsNewVal <= 0 || yearsNewVal > 10) {
+    if (yearsNewVal <= 0 || yearsNewVal > 10) {
         alert("El año no puede ser menor que 1 ni mayor que 10");
         throw new Error("El año no puede ser menor que 1 ni mayor que 10");
     }
@@ -141,11 +131,7 @@ const changeCareerYears = (
 };
 
 /* Cambia los datos de la Carrera y los guarda */
-export const changeSubjectYear = (
-    careerData: CareerData,
-    subject: Subject,
-    newYear: number,
-) => {  
+export const changeSubjectYear = (careerData: CareerData, subject: Subject, newYear: number) => {
     if (newYear > careerData.years) {
         alert("El año de la materia no puede superar la cantidad de años de la carrera");
         throw new Error("El año de la materia no puede superar la cantidad de años de la carrera");
@@ -161,10 +147,9 @@ export const changeSubjectYear = (
 
 /* Borra una materia del careerData */
 export const deleteSubject = (careerData: CareerData, subject: Subject) => {
-    if (!confirm("Confirme el borrado de: " + subject.info.name))
-        return;
+    if (!confirm("Confirme el borrado de: " + subject.info.name)) return;
 
-    const index = careerData.subjects.findIndex(s => s.sid === subject.sid);
+    const index = careerData.subjects.findIndex((s) => s.sid === subject.sid);
     if (index === -1) {
         console.warn("La materia no existe en los datos de la carrera");
         return;
@@ -176,7 +161,7 @@ export const deleteSubject = (careerData: CareerData, subject: Subject) => {
 
 /* Duplica una materia y la inserta al fondo del año */
 export const duplicateSubject = (careerData: CareerData, subject: Subject) => {
-    const maxSid = Math.max(...careerData.subjects.map(s => Number(s.sid)), 0);
+    const maxSid = Math.max(...careerData.subjects.map((s) => Number(s.sid)), 0);
 
     const newSubj: Subject = JSON.parse(JSON.stringify(subject));
     newSubj.sid = (Number(maxSid) + 1).toString();
@@ -186,10 +171,3 @@ export const duplicateSubject = (careerData: CareerData, subject: Subject) => {
 
     saveLocalCareerData(careerData, true);
 };
-
-
-
-
-
-
-
