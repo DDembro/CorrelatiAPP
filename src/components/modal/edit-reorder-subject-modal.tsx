@@ -67,7 +67,7 @@ const ReorderSubject: React.FC<ReorderSubjectProps> = ({ subject, careerData, on
                         {subjectsInYear.map((subj, index) => (
                             <div
                                 key={subj.sid}
-                                className="p-4 bg-indigo-100 rounded-md shadow-sm flex items-center justify-between"
+                                className="p-4 bg-indigo-100 dark:bg-indigo-500 rounded-md shadow-sm flex items-center justify-between"
                                 draggable
                                 onDragStart={() => handleDragStart(index)}
                                 onDragOver={(e) => handleDragOver(e, index)}

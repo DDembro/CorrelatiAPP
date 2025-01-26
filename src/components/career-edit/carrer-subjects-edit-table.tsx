@@ -50,13 +50,13 @@ const RenderEditSubjects = (
                 >
                     {/* Modalidad */}
                     <div className="mb-2">
-                        <p className="font-medium text-gray-300">
+                        <p className="font-medium text-gray-400">
                             <span className="text-indigo-500">Modalidad:</span> {modality}
                         </p>
                     </div>
 
                     {/* Descripción */}
-                    <div className="mb-2 text-gray-300 text-sm">
+                    <div className="mb-2 text-gray-400 text-sm">
                         <p>{info.description}</p>
                     </div>
 

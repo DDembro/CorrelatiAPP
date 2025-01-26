@@ -74,10 +74,10 @@ const EditCorrelativesModal: React.FC<EditCorrelativesModalProps> = ({
                 <div className="modal-fields">
                     <table className="w-full border border-gray-300">
                         <thead>
-                            <tr className="bg-indigo-100">
-                                <th className="border border-gray-300 p-2 text-left">Materias</th>
-                                <th className="border bg-yellow-100 border-gray-300 p-2 text-center">Regularizadas</th>
-                                <th className="border bg-green-100 border-gray-300 p-2 text-center">Aprobadas</th>
+                            <tr >
+                                <th className="border border-gray-300 p-2 text-left bg-indigo-100 dark:bg-indigo-500">Materias</th>
+                                <th className="border border-gray-300 p-2 text-center bg-yellow-100 dark:bg-yellow-500">Regularizadas</th>
+                                <th className="border border-gray-300 p-2 text-center bg-green-100 dark:bg-green-500">Aprobadas</th>
                             </tr>
                         </thead>
                         <tbody>

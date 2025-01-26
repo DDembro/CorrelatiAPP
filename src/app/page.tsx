@@ -37,7 +37,7 @@ export default function MainPage() {
             <h2 className="text-lg font-bold text-gray-800 mb-4 dark:text-gray-200">
               Tutorial
             </h2>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-4 dark:text-gray-300">
               Descarga la plantilla Tutorial para aprender las nociones básicas de la app.
             </p>
             <Link

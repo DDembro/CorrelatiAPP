@@ -2,6 +2,19 @@ import React from 'react';
 
 import "../../styles/main-page.css"
 
+const colaboradores = [
+    {
+        name: "Joaquín Giordano",
+        github: "https://github.com/JoaquinGiordano",
+        description: "Modo oscuro para la página",
+    },
+    {
+        name: "Nicolás Fishman",
+        github: "https://github.com/nicofishman",
+        description: "Bug visual en el context menu",
+    },
+]
+
 const AboutPage = () => {
     return (
         <div className="main-container">
@@ -68,22 +81,29 @@ const AboutPage = () => {
 
             </div>
 
-            <div className="content-container mt-6">
+            <div className="content-container my-6">
                 <h1>Colaboradores</h1>
 
-                <div className='p-4 bg-indigo-100 dark:bg-slate-800 shadow-lg rounded-lg max-w-xs mx-auto flex flex-col items-start space-y-2'>
-                    <div className="flex items-center w-full">
-                        <p className="text-lg font-semibold">Joaquín Giordano:</p>
-                        <a
-                            href="https://github.com/JoaquinGiordano"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="ml-3 font-bold text-indigo-600 dark:text-indigo-400 hover:underline"
+                <div className='flex'>
+                    {colaboradores.map((colab) => (
+                        <div
+                            key={colab.name}
+                            className="p-4 m-3 bg-indigo-100 dark:bg-slate-800 shadow-lg rounded-lg max-w-xs mx-auto flex flex-col items-start space-y-2"
                         >
-                            GitHub
-                        </a>
-                    </div>
-                    <p className="">Modo oscuro para la página</p>
+                            <div className="flex items-center w-full">
+                                <p className="text-lg font-semibold">{colab.name}:</p>
+                                <a
+                                    href={colab.github}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="ml-3 font-bold text-indigo-600 dark:text-indigo-400 hover:underline"
+                                >
+                                    GitHub
+                                </a>
+                            </div>
+                            <p>{colab.description}</p>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
