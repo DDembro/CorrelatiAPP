@@ -3,7 +3,7 @@ import { showAllSubjectInfo, hideAllSubjectInfo, initiateSubjectsDictionary } fr
 import Link from "next/link";
 import { deleteLocalCareerData, downloadCareerData, saveLocalCareerData } from "@/lib/careerEditUtils";
 import ViewCareerDataModal from "../modal/view-careerdata-modal";
-import "@/styles/career-view.css"
+import "@/styles/career-view.css";
 
 const CareerViewNav = ({ careerData, viewMode, setViewMode }: any) => {
     const [viewDataModal, setViewDataModal] = useState(false); // Estado para el modal de "Ver Datos"
@@ -12,16 +12,14 @@ const CareerViewNav = ({ careerData, viewMode, setViewMode }: any) => {
         return <></>;
     }
 
-
     const openViewDataModal = () => setViewDataModal(true);
     const closeViewDataModal = () => setViewDataModal(false);
 
     // Al salir de la vista de una carrera mediante el boton
     const returnAction = () => {
         deleteLocalCareerData();
-        if (!confirm("¿Desea salir? todo cambio no descargado se perdera"))
-            return;
-        window.location.href = '/career-view';
+        if (!confirm("¿Desea salir? todo cambio no descargado se perdera")) return;
+        window.location.href = "/career-view";
     };
 
     // Settea el sessionStorage
@@ -29,16 +27,11 @@ const CareerViewNav = ({ careerData, viewMode, setViewMode }: any) => {
 
     return (
         <div className="view-container">
-            <button
-                onClick={() => returnAction()}
-                className="option-button bg-blue-500 hover:bg-blue-700"
-            >
+            <button onClick={() => returnAction()} className="option-button bg-blue-500 hover:bg-blue-700">
                 Salir
             </button>
 
-            <p className="label">
-                Viendo: {careerData.title}
-            </p>
+            <p className="label">Viendo: {careerData.title}</p>
 
             <button
                 onClick={() => setViewMode(true)}
@@ -78,10 +71,7 @@ const CareerViewNav = ({ careerData, viewMode, setViewMode }: any) => {
                 Editar
             </Link>
 
-            <button
-                onClick={() => openViewDataModal()}
-                className="option-button bg-blue-500 hover:bg-blue-700"
-            >
+            <button onClick={() => openViewDataModal()} className="option-button bg-blue-500 hover:bg-blue-700">
                 Ver Datos
             </button>
 
@@ -92,16 +82,9 @@ const CareerViewNav = ({ careerData, viewMode, setViewMode }: any) => {
                 Descargar
             </button>
 
-            {viewDataModal && (
-                <ViewCareerDataModal 
-                    careerData={careerData} 
-                    onClose={closeViewDataModal} 
-                />
-            )}
+            {viewDataModal && <ViewCareerDataModal careerData={careerData} onClose={closeViewDataModal} />}
 
-            <p className="edit-warning">
-                Edición solo esta disponible para PC.
-            </p>
+            <p className="edit-warning">Edición solo esta disponible para PC.</p>
         </div>
     );
 };

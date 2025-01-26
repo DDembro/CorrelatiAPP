@@ -11,10 +11,10 @@ const ContextMenu = ({
 }: {
     contextMenuRef: React.RefObject<HTMLDivElement | null>;
     contextMenu: ContextMenuState;
-    buttons: { 
-        text: string; 
-        onClick: (subjectClicked?: any) => void; 
-        isSpacer?: boolean 
+    buttons: {
+        text: string;
+        onClick: (subjectClicked?: any) => void;
+        isSpacer?: boolean;
     }[];
 }) => {
     if (!contextMenu.toggled) return null;

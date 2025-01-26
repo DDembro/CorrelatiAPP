@@ -1,14 +1,10 @@
 import React from "react";
-import {
-    formatCorrelativities,
-    showSubjectInfo,
-    SubjectsDictionary,
-} from "@/lib/subjectsUtils";
+import { formatCorrelativities, showSubjectInfo, SubjectsDictionary } from "@/lib/subjectsUtils";
 import { Duration, Modality, Subject } from "@/types/career-view-types";
 
 const RenderEditSubjects = (
-    subjectArr: Subject[], 
-    dictionary: SubjectsDictionary, 
+    subjectArr: Subject[],
+    dictionary: SubjectsDictionary,
     handleOnContextMenu: any,
     handleDragStart: (subject: Subject) => void
 ) => {
@@ -34,9 +30,7 @@ const RenderEditSubjects = (
                 className="rounded-sm shadow-md  bg-transparent hover:shadow-lg transform transition-all duration-300 my-4"
             >
                 {/* Título */}
-                <div
-                    className="text-center py-1 rounded-sm font-semibold text-white px-1 bg-stone-400 dark:bg-stone-600"
-                >
+                <div className="text-center py-1 rounded-sm font-semibold text-white px-1 bg-stone-400 dark:bg-stone-600">
                     <h3 className="text-lg">{info.name}</h3>
                     <p className="text-xs mt-1 font-medium">
                         {info.altname} - {duration} | {info.weeklyLoad}Hs

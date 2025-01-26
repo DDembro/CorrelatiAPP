@@ -1,558 +1,492 @@
 {
-  "title": "Ciencias de la Computación",
-  "author": "Matias Guerrero",
-  "years": 5,
-  "creationDate": "2025-01-19T12:00:00.000Z",
-  "lastUpdateDate": "2025-01-19T12:00:00.000Z",
-  "subjects": [
-    {
-      "sid": "11",
-      "index": 0,
-      "info": {
-        "name": "Algebra 2",
-        "altname": "A2",
-        "duration": 0,
-        "modality": 0,
-        "weeklyLoad": 8,
-        "year": 2,
-        "description": "Sufrimiento en vida",
-        "correlativities": {
-          "regularized": [],
-          "approved": [
-            3,
-            2,
-            "8",
-            "9",
-            1,
-            "10"
-          ]
+    "title": "Ciencias de la Computación",
+    "author": "Matias Guerrero",
+    "years": 5,
+    "creationDate": "2025-01-19T12:00:00.000Z",
+    "lastUpdateDate": "2025-01-19T12:00:00.000Z",
+    "subjects": [
+        {
+            "sid": "11",
+            "index": 0,
+            "info": {
+                "name": "Algebra 2",
+                "altname": "A2",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 8,
+                "year": 2,
+                "description": "Sufrimiento en vida",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": [3, 2, "8", "9", 1, "10"]
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "16",
+            "index": 0,
+            "info": {
+                "name": "Sistema digital",
+                "altname": "SD",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 8,
+                "year": 3,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": ["12"]
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "17",
+            "index": 0,
+            "info": {
+                "name": "Redes de Comunicacion y Computo Distribuido",
+                "altname": "RCCD",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 8,
+                "year": 5,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": ["27", "15", "24"]
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "21",
+            "index": 0,
+            "info": {
+                "name": "Completitud Computacional ",
+                "altname": "CC",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 8,
+                "year": 4,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": ["14", "15"]
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "10",
+            "index": 0,
+            "info": {
+                "name": "Sociedad y Estado",
+                "altname": "SE",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 8,
+                "year": 1,
+                "description": "",
+                "correlativities": {
+                    "regularized": [2],
+                    "approved": [3]
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "22",
+            "index": 1,
+            "info": {
+                "name": "Ingeniería de Software",
+                "altname": "IS",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 8,
+                "year": 3,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": ["16"]
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "12",
+            "index": 1,
+            "info": {
+                "name": "Introducción a la programación ",
+                "altname": "IP",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 8,
+                "year": 2,
+                "description": "Te enseña a prender la compu y poco mas",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": [3, 2, "8", "9", 1, "10"]
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "25",
+            "index": 1,
+            "info": {
+                "name": "Programación concurrente y Paralela",
+                "altname": "PCP",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 8,
+                "year": 5,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": ["24", "18"]
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "23",
+            "index": 1,
+            "info": {
+                "name": "Algebra Lineal Computacional",
+                "altname": "ALC",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 8,
+                "year": 4,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": ["13"]
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": 1,
+            "index": 1,
+            "info": {
+                "name": "Analisis Matematico",
+                "altname": "M1",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 8,
+                "year": 1,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "14",
+            "index": 2,
+            "info": {
+                "name": "Lenguajes Formales, Autómatas y Computabilidad",
+                "altname": "LFAC",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 8,
+                "year": 3,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": ["13"]
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "13",
+            "index": 2,
+            "info": {
+                "name": "Algoritmo y Estructura de Datos",
+                "altname": "AE",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 8,
+                "year": 2,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": ["11", "12"]
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "24",
+            "index": 2,
+            "info": {
+                "name": "Sistemas Operativos ",
+                "altname": "So",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 8,
+                "year": 4,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": ["20"]
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": 2,
+            "index": 2,
+            "info": {
+                "name": "Algebra",
+                "altname": "A1",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 8,
+                "year": 1,
+                "description": "Soy un capo",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "15",
+            "index": 3,
+            "info": {
+                "name": "Técnica de Diseño de Algoritmos ",
+                "altname": "TDA",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 8,
+                "year": 3,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": ["13"]
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "19",
+            "index": 3,
+            "info": {
+                "name": "Analisis 1",
+                "altname": "F1",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 8,
+                "year": 2,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": [3, 2, "8", "9", 1, "10"]
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "9",
+            "index": 3,
+            "info": {
+                "name": "Fisica",
+                "altname": "E1",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 8,
+                "year": 1,
+                "description": "",
+                "correlativities": {
+                    "regularized": [1],
+                    "approved": [2]
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "26",
+            "index": 3,
+            "info": {
+                "name": "Almacenamiento y Recuperación de Información",
+                "altname": "ARI",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 8,
+                "year": 4,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": ["27"]
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "20",
+            "index": 4,
+            "info": {
+                "name": "Arquitectura y Organización de Computadores",
+                "altname": "AOC",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 8,
+                "year": 3,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": ["16"]
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "8",
+            "index": 4,
+            "info": {
+                "name": "Introducción al Pensamiento Científico",
+                "altname": "IPC",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 8,
+                "year": 1,
+                "description": "",
+                "correlativities": {
+                    "regularized": [1],
+                    "approved": [2]
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "27",
+            "index": 4,
+            "info": {
+                "name": "Estadística Computación",
+                "altname": "EC",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 8,
+                "year": 4,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": ["23"]
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "18",
+            "index": 5,
+            "info": {
+                "name": "Paradigmas de Programación ",
+                "altname": "PP",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 8,
+                "year": 3,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": ["13"]
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": 3,
+            "index": 5,
+            "info": {
+                "name": "Quimica",
+                "altname": "Q1",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 8,
+                "year": 1,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
         }
-      },
-      "personal": {
-        "qualification": 0,
-        "status": 0
-      }
-    },
-    {
-      "sid": "16",
-      "index": 0,
-      "info": {
-        "name": "Sistema digital",
-        "altname": "SD",
-        "duration": 0,
-        "modality": 0,
-        "weeklyLoad": 8,
-        "year": 3,
-        "description": "",
-        "correlativities": {
-          "regularized": [],
-          "approved": [
-            "12"
-          ]
-        }
-      },
-      "personal": {
-        "qualification": 0,
-        "status": 0
-      }
-    },
-    {
-      "sid": "17",
-      "index": 0,
-      "info": {
-        "name": "Redes de Comunicacion y Computo Distribuido",
-        "altname": "RCCD",
-        "duration": 0,
-        "modality": 0,
-        "weeklyLoad": 8,
-        "year": 5,
-        "description": "",
-        "correlativities": {
-          "regularized": [],
-          "approved": [
-            "27",
-            "15",
-            "24"
-          ]
-        }
-      },
-      "personal": {
-        "qualification": 0,
-        "status": 0
-      }
-    },
-    {
-      "sid": "21",
-      "index": 0,
-      "info": {
-        "name": "Completitud Computacional ",
-        "altname": "CC",
-        "duration": 0,
-        "modality": 0,
-        "weeklyLoad": 8,
-        "year": 4,
-        "description": "",
-        "correlativities": {
-          "regularized": [],
-          "approved": [
-            "14",
-            "15"
-          ]
-        }
-      },
-      "personal": {
-        "qualification": 0,
-        "status": 0
-      }
-    },
-    {
-      "sid": "10",
-      "index": 0,
-      "info": {
-        "name": "Sociedad y Estado",
-        "altname": "SE",
-        "duration": 0,
-        "modality": 0,
-        "weeklyLoad": 8,
-        "year": 1,
-        "description": "",
-        "correlativities": {
-          "regularized": [
-            2
-          ],
-          "approved": [
-            3
-          ]
-        }
-      },
-      "personal": {
-        "qualification": 0,
-        "status": 0
-      }
-    },
-    {
-      "sid": "22",
-      "index": 1,
-      "info": {
-        "name": "Ingeniería de Software",
-        "altname": "IS",
-        "duration": 0,
-        "modality": 0,
-        "weeklyLoad": 8,
-        "year": 3,
-        "description": "",
-        "correlativities": {
-          "regularized": [],
-          "approved": [
-            "16"
-          ]
-        }
-      },
-      "personal": {
-        "qualification": 0,
-        "status": 0
-      }
-    },
-    {
-      "sid": "12",
-      "index": 1,
-      "info": {
-        "name": "Introducción a la programación ",
-        "altname": "IP",
-        "duration": 0,
-        "modality": 0,
-        "weeklyLoad": 8,
-        "year": 2,
-        "description": "Te enseña a prender la compu y poco mas",
-        "correlativities": {
-          "regularized": [],
-          "approved": [
-            3,
-            2,
-            "8",
-            "9",
-            1,
-            "10"
-          ]
-        }
-      },
-      "personal": {
-        "qualification": 0,
-        "status": 0
-      }
-    },
-    {
-      "sid": "25",
-      "index": 1,
-      "info": {
-        "name": "Programación concurrente y Paralela",
-        "altname": "PCP",
-        "duration": 0,
-        "modality": 0,
-        "weeklyLoad": 8,
-        "year": 5,
-        "description": "",
-        "correlativities": {
-          "regularized": [],
-          "approved": [
-            "24",
-            "18"
-          ]
-        }
-      },
-      "personal": {
-        "qualification": 0,
-        "status": 0
-      }
-    },
-    {
-      "sid": "23",
-      "index": 1,
-      "info": {
-        "name": "Algebra Lineal Computacional",
-        "altname": "ALC",
-        "duration": 0,
-        "modality": 0,
-        "weeklyLoad": 8,
-        "year": 4,
-        "description": "",
-        "correlativities": {
-          "regularized": [],
-          "approved": [
-            "13"
-          ]
-        }
-      },
-      "personal": {
-        "qualification": 0,
-        "status": 0
-      }
-    },
-    {
-      "sid": 1,
-      "index": 1,
-      "info": {
-        "name": "Analisis Matematico",
-        "altname": "M1",
-        "duration": 0,
-        "modality": 0,
-        "weeklyLoad": 8,
-        "year": 1,
-        "description": "",
-        "correlativities": {
-          "regularized": [],
-          "approved": []
-        }
-      },
-      "personal": {
-        "qualification": 0,
-        "status": 0
-      }
-    },
-    {
-      "sid": "14",
-      "index": 2,
-      "info": {
-        "name": "Lenguajes Formales, Autómatas y Computabilidad",
-        "altname": "LFAC",
-        "duration": 0,
-        "modality": 0,
-        "weeklyLoad": 8,
-        "year": 3,
-        "description": "",
-        "correlativities": {
-          "regularized": [],
-          "approved": [
-            "13"
-          ]
-        }
-      },
-      "personal": {
-        "qualification": 0,
-        "status": 0
-      }
-    },
-    {
-      "sid": "13",
-      "index": 2,
-      "info": {
-        "name": "Algoritmo y Estructura de Datos",
-        "altname": "AE",
-        "duration": 0,
-        "modality": 0,
-        "weeklyLoad": 8,
-        "year": 2,
-        "description": "",
-        "correlativities": {
-          "regularized": [],
-          "approved": [
-            "11",
-            "12"
-          ]
-        }
-      },
-      "personal": {
-        "qualification": 0,
-        "status": 0
-      }
-    },
-    {
-      "sid": "24",
-      "index": 2,
-      "info": {
-        "name": "Sistemas Operativos ",
-        "altname": "So",
-        "duration": 0,
-        "modality": 0,
-        "weeklyLoad": 8,
-        "year": 4,
-        "description": "",
-        "correlativities": {
-          "regularized": [],
-          "approved": [
-            "20"
-          ]
-        }
-      },
-      "personal": {
-        "qualification": 0,
-        "status": 0
-      }
-    },
-    {
-      "sid": 2,
-      "index": 2,
-      "info": {
-        "name": "Algebra",
-        "altname": "A1",
-        "duration": 0,
-        "modality": 0,
-        "weeklyLoad": 8,
-        "year": 1,
-        "description": "Soy un capo",
-        "correlativities": {
-          "regularized": [],
-          "approved": []
-        }
-      },
-      "personal": {
-        "qualification": 0,
-        "status": 0
-      }
-    },
-    {
-      "sid": "15",
-      "index": 3,
-      "info": {
-        "name": "Técnica de Diseño de Algoritmos ",
-        "altname": "TDA",
-        "duration": 0,
-        "modality": 0,
-        "weeklyLoad": 8,
-        "year": 3,
-        "description": "",
-        "correlativities": {
-          "regularized": [],
-          "approved": [
-            "13"
-          ]
-        }
-      },
-      "personal": {
-        "qualification": 0,
-        "status": 0
-      }
-    },
-    {
-      "sid": "19",
-      "index": 3,
-      "info": {
-        "name": "Analisis 1",
-        "altname": "F1",
-        "duration": 0,
-        "modality": 0,
-        "weeklyLoad": 8,
-        "year": 2,
-        "description": "",
-        "correlativities": {
-          "regularized": [],
-          "approved": [
-            3,
-            2,
-            "8",
-            "9",
-            1,
-            "10"
-          ]
-        }
-      },
-      "personal": {
-        "qualification": 0,
-        "status": 0
-      }
-    },
-    {
-      "sid": "9",
-      "index": 3,
-      "info": {
-        "name": "Fisica",
-        "altname": "E1",
-        "duration": 0,
-        "modality": 0,
-        "weeklyLoad": 8,
-        "year": 1,
-        "description": "",
-        "correlativities": {
-          "regularized": [
-            1
-          ],
-          "approved": [
-            2
-          ]
-        }
-      },
-      "personal": {
-        "qualification": 0,
-        "status": 0
-      }
-    },
-    {
-      "sid": "26",
-      "index": 3,
-      "info": {
-        "name": "Almacenamiento y Recuperación de Información",
-        "altname": "ARI",
-        "duration": 0,
-        "modality": 0,
-        "weeklyLoad": 8,
-        "year": 4,
-        "description": "",
-        "correlativities": {
-          "regularized": [],
-          "approved": [
-            "27"
-          ]
-        }
-      },
-      "personal": {
-        "qualification": 0,
-        "status": 0
-      }
-    },
-    {
-      "sid": "20",
-      "index": 4,
-      "info": {
-        "name": "Arquitectura y Organización de Computadores",
-        "altname": "AOC",
-        "duration": 0,
-        "modality": 0,
-        "weeklyLoad": 8,
-        "year": 3,
-        "description": "",
-        "correlativities": {
-          "regularized": [],
-          "approved": [
-            "16"
-          ]
-        }
-      },
-      "personal": {
-        "qualification": 0,
-        "status": 0
-      }
-    },
-    {
-      "sid": "8",
-      "index": 4,
-      "info": {
-        "name": "Introducción al Pensamiento Científico",
-        "altname": "IPC",
-        "duration": 0,
-        "modality": 0,
-        "weeklyLoad": 8,
-        "year": 1,
-        "description": "",
-        "correlativities": {
-          "regularized": [
-            1
-          ],
-          "approved": [
-            2
-          ]
-        }
-      },
-      "personal": {
-        "qualification": 0,
-        "status": 0
-      }
-    },
-    {
-      "sid": "27",
-      "index": 4,
-      "info": {
-        "name": "Estadística Computación",
-        "altname": "EC",
-        "duration": 0,
-        "modality": 0,
-        "weeklyLoad": 8,
-        "year": 4,
-        "description": "",
-        "correlativities": {
-          "regularized": [],
-          "approved": [
-            "23"
-          ]
-        }
-      },
-      "personal": {
-        "qualification": 0,
-        "status": 0
-      }
-    },
-    {
-      "sid": "18",
-      "index": 5,
-      "info": {
-        "name": "Paradigmas de Programación ",
-        "altname": "PP",
-        "duration": 0,
-        "modality": 0,
-        "weeklyLoad": 8,
-        "year": 3,
-        "description": "",
-        "correlativities": {
-          "regularized": [],
-          "approved": [
-            "13"
-          ]
-        }
-      },
-      "personal": {
-        "qualification": 0,
-        "status": 0
-      }
-    },
-    {
-      "sid": 3,
-      "index": 5,
-      "info": {
-        "name": "Quimica",
-        "altname": "Q1",
-        "duration": 0,
-        "modality": 0,
-        "weeklyLoad": 8,
-        "year": 1,
-        "description": "",
-        "correlativities": {
-          "regularized": [],
-          "approved": []
-        }
-      },
-      "personal": {
-        "qualification": 0,
-        "status": 0
-      }
-    }
-  ]
+    ]
 }

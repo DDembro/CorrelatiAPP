@@ -73,22 +73,18 @@ const ReorderSubject: React.FC<ReorderSubjectProps> = ({ subject, careerData, on
                                 onDragOver={(e) => handleDragOver(e, index)}
                                 onDrop={handleDrop}
                             >
-                                <p className="font-semibold">{subj.info.altname} - {subj.info.name}</p>
+                                <p className="font-semibold">
+                                    {subj.info.altname} - {subj.info.name}
+                                </p>
                             </div>
                         ))}
                     </div>
                 </div>
                 <div className="modal-actions">
-                    <button
-                        onClick={onClose}
-                        className="modal-button modal-cancel-button"
-                    >
+                    <button onClick={onClose} className="modal-button modal-cancel-button">
                         Cancelar
                     </button>
-                    <button
-                        onClick={handleSave}
-                        className="modal-button modal-save-button"
-                    >
+                    <button onClick={handleSave} className="modal-button modal-save-button">
                         Guardar
                     </button>
                 </div>

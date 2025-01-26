@@ -1,7 +1,7 @@
 .context-menu {
     visibility: hidden;
     opacity: 0;
-    background-color: #DEEFE7;
+    background-color: #deefe7;
     position: fixed;
     z-index: 5;
     color: black;
@@ -36,7 +36,7 @@
 }
 
 .context-menu button:hover {
-    background-color: #159A9C;
+    background-color: #159a9c;
     color: white;
 }
 

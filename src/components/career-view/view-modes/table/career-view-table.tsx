@@ -36,29 +36,24 @@ const CareerViewTable: React.FC<CareerViewTableProps> = ({ careerData }) => {
                 buttons={[
                     {
                         text: "Marcar No Cursada",
-                        onClick: (subject: Subject) =>
-                            changeStatus(careerData, subject, SubjectStatus.NA),
+                        onClick: (subject: Subject) => changeStatus(careerData, subject, SubjectStatus.NA),
                     },
                     {
                         text: "Marcar Regularizada",
-                        onClick: (subject: Subject) =>
-                            changeStatus(careerData, subject, SubjectStatus.Regularizado),
+                        onClick: (subject: Subject) => changeStatus(careerData, subject, SubjectStatus.Regularizado),
                     },
                     {
                         text: "Marcar Aprobada",
-                        onClick: (subject: Subject) =>
-                            changeStatus(careerData, subject, SubjectStatus.Aprobado),
+                        onClick: (subject: Subject) => changeStatus(careerData, subject, SubjectStatus.Aprobado),
                     },
                     {
                         text: "Marcar Promocionada",
-                        onClick: (subject: Subject) =>
-                            changeStatus(careerData, subject, SubjectStatus.Promocionado),
+                        onClick: (subject: Subject) => changeStatus(careerData, subject, SubjectStatus.Promocionado),
                     },
                     { text: "", onClick: () => null, isSpacer: true },
                     {
                         text: "Mostrar Correlativas",
-                        onClick: (subject: Subject) =>
-                            showCorrelativities(careerData.subjects, subject),
+                        onClick: (subject: Subject) => showCorrelativities(careerData.subjects, subject),
                     },
                     {
                         text: "Ingresar tu Nota",
@@ -66,11 +61,7 @@ const CareerViewTable: React.FC<CareerViewTableProps> = ({ careerData }) => {
                             changeQualification(
                                 careerData,
                                 subject,
-                                Number(
-                                    prompt(
-                                        "Ingresa tu nota para " + subject.info.name
-                                    )
-                                )
+                                Number(prompt("Ingresa tu nota para " + subject.info.name))
                             ),
                     },
                 ]}

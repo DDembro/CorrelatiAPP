@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import "../../styles/main-page.css"
+import "../../styles/main-page.css";
 
 const colaboradores = [
     {
@@ -24,15 +24,18 @@ const AboutPage = () => {
 
                 {/* Main Content */}
                 <p className="mb-4 leading-relaxed">
-                    Este proyecto es una iniciativa de código abierto creada por{' '}
-                    <span className="font-bold">Nicolas Dembrowky</span>, estudiante de Ingeniería en Sistemas en la UTN FRBA.<br />
-                    El propósito de esta aplicación es brindar a los estudiantes de cualquier carrera y universidad la posibilidad de gestionar
-                    sus estudios de forma practica y comoda.
+                    Este proyecto es una iniciativa de código abierto creada por{" "}
+                    <span className="font-bold">Nicolas Dembrowky</span>, estudiante de Ingeniería en Sistemas en la UTN
+                    FRBA.
+                    <br />
+                    El propósito de esta aplicación es brindar a los estudiantes de cualquier carrera y universidad la
+                    posibilidad de gestionar sus estudios de forma practica y comoda.
                 </p>
 
                 {/* Footer */}
                 <p className="mt-6">
-                    Si quieres conocer más sobre mis proyectos o ponerte en contacto conmigo, haz clic en el botón de abajo para visitar mi{' '}
+                    Si quieres conocer más sobre mis proyectos o ponerte en contacto conmigo, haz clic en el botón de
+                    abajo para visitar mi{" "}
                     <a
                         href="https://www.linkedin.com/in/dembrowkynicolas/"
                         target="_blank"
@@ -40,8 +43,8 @@ const AboutPage = () => {
                         className="font-bold text-indigo-600 dark:text-indigo-400 hover:underline"
                     >
                         perfil de LinkedIn
-                    </a>
-                    {' '}o revisar mi{' '}
+                    </a>{" "}
+                    o revisar mi{" "}
                     <a
                         href="https://dembrowky-nicolas-portfolioweb.web.app/"
                         target="_blank"
@@ -49,7 +52,8 @@ const AboutPage = () => {
                         className="font-bold text-indigo-600 dark:text-indigo-400 hover:underline"
                     >
                         Portafolio Web
-                    </a>.
+                    </a>
+                    .
                 </p>
 
                 <a
@@ -78,7 +82,6 @@ const AboutPage = () => {
                 >
                     Ver en GitHub
                 </a>
-
             </div>
 
             <div className="content-container my-6">

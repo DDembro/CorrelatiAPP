@@ -1,10 +1,10 @@
 export interface CareerData {
-    title: string,
-    author: string,
-    years: number,
-    creationDate: Date,
+    title: string;
+    author: string;
+    years: number;
+    creationDate: Date;
     lastUpdateDate: Date;
-    subjects: [Subject]
+    subjects: [Subject];
 }
 
 export enum Modality {
