@@ -73,15 +73,16 @@ const CareerViewUpload = ({ onFileUpload }: { onFileUpload: (data: string) => vo
                         className="hidden"
                     />
                     <p className="mt-3 text-sm text-gray-500">
-                        Arrastra y suelta un archivo aquí o haz clic en el botón para seleccionar.<br />
-                        Si no tienes un archivo, ve a{' '}
-                        <Link 
-                            href="/template" 
+                        Arrastra y suelta un archivo aquí o haz clic en el botón para seleccionar.
+                        <br />
+                        Si no tienes un archivo, ve a{" "}
+                        <Link
+                            href="/template"
                             className="font-bold text-indigo-600 dark:text-indigo-400 hover:underline"
                         >
                             Plantillas
-                        </Link> 
-                        {' '}y descarga uno para comenzar.
+                        </Link>{" "}
+                        y descarga uno para comenzar.
                     </p>
                 </div>
             </div>

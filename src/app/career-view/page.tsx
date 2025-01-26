@@ -36,7 +36,6 @@ const CareerViewPage = () => {
         }
     }, []);
 
-
     // Vista de carga mientras no hay datos cargados
     if (!careerData) {
         return (
@@ -51,11 +50,7 @@ const CareerViewPage = () => {
         <div className="p-2">
             <CareerViewNav careerData={careerData} viewMode={viewMode} setViewMode={setViewMode} />
             <div>
-                {viewMode ? (
-                    <CareerViewTable careerData={careerData} />
-                ) : (
-                    <ListViewCareer careerData={careerData} />
-                )}
+                {viewMode ? <CareerViewTable careerData={careerData} /> : <ListViewCareer careerData={careerData} />}
             </div>
         </div>
     );

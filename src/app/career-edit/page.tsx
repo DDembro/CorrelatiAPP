@@ -20,11 +20,7 @@ const CareerEditPage = () => {
 
     // Vista de carga mientras no hay datos cargados
     if (!careerData) {
-        return (
-            <div className="p-2">
-                Si esta pagina no carga, intenta volver a repetir el proceso
-            </div>
-        );
+        return <div className="p-2">Si esta pagina no carga, intenta volver a repetir el proceso</div>;
     }
 
     // Vista de la carrera cuando se cargan datos

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Subject, CareerData, Modality, Duration } from "@/types/career-view-types";
 import { changeSubjectInfo } from "@/lib/careerEditUtils";
-import "../../styles/edit-modal.css"
+import "../../styles/edit-modal.css";
 
 type EditSubjectModalProps = {
     subject: Subject;
@@ -29,13 +29,13 @@ const EditSubjectModal: React.FC<EditSubjectModalProps> = ({ subject, careerData
             name: "modality",
             label: "Modalidad",
             type: "select",
-            options: Object.entries(Modality).filter(([key]) => isNaN(Number(key)))
+            options: Object.entries(Modality).filter(([key]) => isNaN(Number(key))),
         },
         {
             name: "duration",
             label: "Duración",
             type: "select",
-            options: Object.entries(Duration).filter(([key]) => isNaN(Number(key)))
+            options: Object.entries(Duration).filter(([key]) => isNaN(Number(key))),
         },
         { name: "description", label: "Descripción", type: "textarea" },
     ];
@@ -45,9 +45,7 @@ const EditSubjectModal: React.FC<EditSubjectModalProps> = ({ subject, careerData
         const { name, value } = e.target;
         setFormValues((prev) => ({
             ...prev,
-            [name]: ["modality", "duration", "weeklyLoad"].includes(name)
-                ? Number(value)
-                : value,
+            [name]: ["modality", "duration", "weeklyLoad"].includes(name) ? Number(value) : value,
         }));
     };
 

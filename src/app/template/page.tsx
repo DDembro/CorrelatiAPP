@@ -91,16 +91,16 @@ const TemplatePage = () => {
                 ))}
                 <hr className="mb-8 border-t-2 border-gray-400 dark:border-slate-800 w-full" />
                 <div>
-                    ¿No encuentras tu carrera? ¡Puedes usar las plantillas disponibles para crear tu plan de estudios! <br />
-                    Será muy apreciado si pudieras enviar el archivo de la carrera, así es añadido a la página como una plantilla nueva.<br />
-                    Ve a{' '}
-                    <Link 
-                        href="/about" 
-                        className="font-bold text-indigo-600 hover:underline"
-                    >
+                    ¿No encuentras tu carrera? ¡Puedes usar las plantillas disponibles para crear tu plan de estudios!{" "}
+                    <br />
+                    Será muy apreciado si pudieras enviar el archivo de la carrera, así es añadido a la página como una
+                    plantilla nueva.
+                    <br />
+                    Ve a{" "}
+                    <Link href="/about" className="font-bold text-indigo-600 hover:underline">
                         Sobre La App
-                    </Link> 
-                    {' '}para encontrar mis contactos.
+                    </Link>{" "}
+                    para encontrar mis contactos.
                 </div>
             </div>
         </div>

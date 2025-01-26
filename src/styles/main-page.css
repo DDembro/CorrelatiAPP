@@ -3,7 +3,6 @@
 }
 
 .content-container {
-
     @apply bg-slate-50 rounded-lg w-3/4 shadow-lg p-6 text-center dark:bg-slate-700 dark:text-white;
 }
 

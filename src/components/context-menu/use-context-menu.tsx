@@ -4,10 +4,10 @@ import { hideCorrelativities } from "@/lib/subjectsUtils";
 
 export const useContextMenu = (
     careerData: CareerData,
-    initialState: ContextMenuState = { 
-        position: { x: 0, y: 0 }, 
-        toggled: false, 
-        subjectClicked: null 
+    initialState: ContextMenuState = {
+        position: { x: 0, y: 0 },
+        toggled: false,
+        subjectClicked: null,
     }
 ) => {
     const contextMenuRef = useRef<HTMLDivElement | null>(null);
@@ -42,9 +42,7 @@ export const useContextMenu = (
 
     const resetContextMenu = () => {
         if (contextMenu.subjectClicked) {
-            const subj = document.getElementById(
-                `subject-${contextMenu.subjectClicked.sid}`
-            );
+            const subj = document.getElementById(`subject-${contextMenu.subjectClicked.sid}`);
             subj?.classList.remove("shadow-md", "shadow-slate-700");
         }
         setContextMenu({ position: { x: 0, y: 0 }, toggled: false, subjectClicked: null });
