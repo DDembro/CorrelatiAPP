@@ -18,6 +18,15 @@
         "file": "Ing en sistemas UTN.json"
     },
     {
+        "name": "Ingeniería Industrial",
+        "author": "Nicolas Dembrowky",
+        "date": "2025-01-26T12:00:00.000Z",
+        "college": "UTN",
+        "description": "Sin electivas.",
+        "color": "bg-amber-600",
+        "file": "Ing Industrial UTN.json"
+    },
+    {
         "name": "Ciencias de la Computación",
         "author": "Matias Guerrero",
         "date": "2025-01-25T12:00:00.000Z",

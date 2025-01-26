@@ -1,0 +1,891 @@
+{
+  "title": "Ing Industrial UTN",
+  "author": "Nicolas Dembrowky",
+  "years": 5,
+  "creationDate": "2025-01-26T12:00:00.000Z",
+  "lastUpdateDate": "2025-01-26T12:00:00.000Z",
+  "subjects": [
+    {
+      "sid": 33,
+      "index": 0,
+      "info": {
+        "name": "Proyecto Final",
+        "altname": "PF",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 6,
+        "year": 5,
+        "description": "",
+        "correlativities": {
+          "regularized": ["43", "49", "47", "52", 25, "48"],
+          "approved": [18, 17, "45", 19, "40", "42", "44", "39"]
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": 1,
+      "index": 0,
+      "info": {
+        "name": "Pensamiento Sistémico",
+        "altname": "PS",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 3,
+        "year": 1,
+        "description": "",
+        "correlativities": {
+          "regularized": [],
+          "approved": []
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": 9,
+      "index": 0,
+      "info": {
+        "name": "Administración General",
+        "altname": "AdmGen",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 4,
+        "year": 2,
+        "description": "",
+        "correlativities": {
+          "regularized": [5, 1, 8, 6],
+          "approved": []
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": 17,
+      "index": 0,
+      "info": {
+        "name": "Estudio del Trabajo",
+        "altname": "EdT",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 4,
+        "year": 3,
+        "description": "",
+        "correlativities": {
+          "regularized": [9, 16],
+          "approved": [2, 3, 5, 1, 6, 8]
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": 25,
+      "index": 0,
+      "info": {
+        "name": "Evaluación de Proyectos",
+        "altname": "EdP",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 5,
+        "year": 4,
+        "description": "",
+        "correlativities": {
+          "regularized": [17, "41", "45", "44"],
+          "approved": [9, 16, 11, 13]
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": 34,
+      "index": 1,
+      "info": {
+        "name": "Mantenimiento",
+        "altname": "Mant",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 3,
+        "year": 5,
+        "description": "",
+        "correlativities": {
+          "regularized": ["46"],
+          "approved": [19, "40", "39"]
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": 6,
+      "index": 1,
+      "info": {
+        "name": "Algebra y Geometria Analitica",
+        "altname": "AGA",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 5,
+        "year": 1,
+        "description": "",
+        "correlativities": {
+          "regularized": [],
+          "approved": []
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": 10,
+      "index": 1,
+      "info": {
+        "name": "Analisis Matematico 2",
+        "altname": "AM2",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 5,
+        "year": 2,
+        "description": "",
+        "correlativities": {
+          "regularized": [2, 6],
+          "approved": []
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": 19,
+      "index": 1,
+      "info": {
+        "name": "Termodinámica y Máquinas Térmicas",
+        "altname": "TMT",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 4,
+        "year": 3,
+        "description": "",
+        "correlativities": {
+          "regularized": [4, 14],
+          "approved": [2, 7]
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": 29,
+      "index": 1,
+      "info": {
+        "name": "Legislacion",
+        "altname": "Leg",
+        "duration": 0,
+        "modality": 0,
+        "weeklyLoad": 2,
+        "year": 4,
+        "description": "",
+        "correlativities": {
+          "regularized": [],
+          "approved": [9]
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": 35,
+      "index": 2,
+      "info": {
+        "name": "Comercio Exterior",
+        "altname": "CE",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 3,
+        "year": 5,
+        "description": "",
+        "correlativities": {
+          "regularized": [25],
+          "approved": [17, "45", "44"]
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": 2,
+      "index": 2,
+      "info": {
+        "name": "Analisis Matematico 1",
+        "altname": "AM1",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 5,
+        "year": 1,
+        "description": "",
+        "correlativities": {
+          "regularized": [],
+          "approved": []
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": 14,
+      "index": 2,
+      "info": {
+        "name": "Fisica 2",
+        "altname": "F2",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 5,
+        "year": 2,
+        "description": "",
+        "correlativities": {
+          "regularized": [2, 7],
+          "approved": []
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": "39",
+      "index": 2,
+      "info": {
+        "name": "Electrotecnia y Máquinas Eléctricas",
+        "altname": "EME",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 5,
+        "year": 3,
+        "description": "",
+        "correlativities": {
+          "regularized": [14],
+          "approved": [2, 7]
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": 18,
+      "index": 2,
+      "info": {
+        "name": "Ingles 2",
+        "altname": "IT2",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 2,
+        "year": 4,
+        "description": "",
+        "correlativities": {
+          "regularized": [13],
+          "approved": []
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": 36,
+      "index": 3,
+      "info": {
+        "name": "Control de Gestión",
+        "altname": "CdG",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 3,
+        "year": 5,
+        "description": "",
+        "correlativities": {
+          "regularized": ["41", "44"],
+          "approved": [9, 11]
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": 7,
+      "index": 3,
+      "info": {
+        "name": "Fisica 1",
+        "altname": "F1",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 5,
+        "year": 1,
+        "description": "",
+        "correlativities": {
+          "regularized": [],
+          "approved": []
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": 13,
+      "index": 3,
+      "info": {
+        "name": "Ingles 1",
+        "altname": "IT1",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 2,
+        "year": 2,
+        "description": "Recomendable hacerla libre",
+        "correlativities": {
+          "regularized": [],
+          "approved": []
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": "40",
+      "index": 3,
+      "info": {
+        "name": "Estática y Resistencia de Materiales",
+        "altname": "ERM",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 4,
+        "year": 3,
+        "description": "",
+        "correlativities": {
+          "regularized": [10, 12],
+          "approved": [2, 4, 7, 6]
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": "46",
+      "index": 3,
+      "info": {
+        "name": "Instalaciones Industriales",
+        "altname": "InsInd",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 3,
+        "year": 4,
+        "description": "",
+        "correlativities": {
+          "regularized": [19, "40", "42", "39"],
+          "approved": [10, 4, 12, 14]
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": 37,
+      "index": 4,
+      "info": {
+        "name": "Manejo de Materiales y Distribución de Plantas",
+        "altname": "MMDP",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 3,
+        "year": 5,
+        "description": "",
+        "correlativities": {
+          "regularized": [17, "51"],
+          "approved": [10, 9, "40"]
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": 3,
+      "index": 4,
+      "info": {
+        "name": "Sistemas de Representación",
+        "altname": "SSRR",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 3,
+        "year": 1,
+        "description": "",
+        "correlativities": {
+          "regularized": [],
+          "approved": []
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": 11,
+      "index": 4,
+      "info": {
+        "name": "Economía General",
+        "altname": "EcoG",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 4,
+        "year": 2,
+        "description": "",
+        "correlativities": {
+          "regularized": [2, 1, 8],
+          "approved": []
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": "41",
+      "index": 4,
+      "info": {
+        "name": "Costos y Presupuestos",
+        "altname": "CyP",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 3,
+        "year": 3,
+        "description": "",
+        "correlativities": {
+          "regularized": [9, 11],
+          "approved": [2, 5, 1, 6, 8]
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": "47",
+      "index": 4,
+      "info": {
+        "name": "Investigación Operativa",
+        "altname": "IO",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 4,
+        "year": 4,
+        "description": "",
+        "correlativities": {
+          "regularized": [10, 16, "43"],
+          "approved": [2, 6]
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": 4,
+      "index": 5,
+      "info": {
+        "name": "Química General",
+        "altname": "QG",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 5,
+        "year": 1,
+        "description": "",
+        "correlativities": {
+          "regularized": [],
+          "approved": []
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": 12,
+      "index": 5,
+      "info": {
+        "name": "Ciencia de los Materiales",
+        "altname": "CdM",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 4,
+        "year": 2,
+        "description": "",
+        "correlativities": {
+          "regularized": [4, 7],
+          "approved": []
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": "42",
+      "index": 5,
+      "info": {
+        "name": "Mecánica de los Fluidos",
+        "altname": "MdF",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 3,
+        "year": 3,
+        "description": "",
+        "correlativities": {
+          "regularized": [10],
+          "approved": [2, 7, 6]
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": "48",
+      "index": 5,
+      "info": {
+        "name": "Planificación y Control de la Producción",
+        "altname": "PCP",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 4,
+        "year": 4,
+        "description": "",
+        "correlativities": {
+          "regularized": [17],
+          "approved": [9, 16]
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": "53",
+      "index": 5,
+      "info": {
+        "name": "Diseño de Producto",
+        "altname": "CdG",
+        "duration": 0,
+        "modality": 0,
+        "weeklyLoad": 4,
+        "year": 5,
+        "description": "",
+        "correlativities": {
+          "regularized": [17],
+          "approved": [9, 16]
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": 5,
+      "index": 6,
+      "info": {
+        "name": "Informática I",
+        "altname": "Info1",
+        "duration": 0,
+        "modality": 0,
+        "weeklyLoad": 3,
+        "year": 1,
+        "description": "",
+        "correlativities": {
+          "regularized": [],
+          "approved": []
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": 16,
+      "index": 6,
+      "info": {
+        "name": "Probabilidad y estadistica",
+        "altname": "PyE",
+        "duration": 0,
+        "modality": 0,
+        "weeklyLoad": 6,
+        "year": 2,
+        "description": "",
+        "correlativities": {
+          "regularized": [2, 6],
+          "approved": []
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": "43",
+      "index": 6,
+      "info": {
+        "name": "Análisis Numérico y Cálculo Avanzado",
+        "altname": "ANCA",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 2,
+        "year": 3,
+        "description": "",
+        "correlativities": {
+          "regularized": [10],
+          "approved": [2, 6]
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": "49",
+      "index": 6,
+      "info": {
+        "name": "Seguridad, Higiene e Ingeniería Ambiental",
+        "altname": "SHIA",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 3,
+        "year": 4,
+        "description": "",
+        "correlativities": {
+          "regularized": [13, 17],
+          "approved": [9, 16]
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": "54",
+      "index": 6,
+      "info": {
+        "name": "Relaciones Industriales",
+        "altname": "RRII",
+        "duration": 0,
+        "modality": 0,
+        "weeklyLoad": 6,
+        "year": 5,
+        "description": "",
+        "correlativities": {
+          "regularized": [25],
+          "approved": []
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": 8,
+      "index": 7,
+      "info": {
+        "name": "Ingenieria y Sociedad",
+        "altname": "IngSoc",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 2,
+        "year": 1,
+        "description": "",
+        "correlativities": {
+          "regularized": [],
+          "approved": []
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": "38",
+      "index": 7,
+      "info": {
+        "name": "Informática II",
+        "altname": "Info2",
+        "duration": 0,
+        "modality": 0,
+        "weeklyLoad": 6,
+        "year": 2,
+        "description": "",
+        "correlativities": {
+          "regularized": [5],
+          "approved": []
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": "44",
+      "index": 7,
+      "info": {
+        "name": "Economía de la Empresa",
+        "altname": "EdE",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 3,
+        "year": 3,
+        "description": "",
+        "correlativities": {
+          "regularized": [9, 16, 11],
+          "approved": [2, 5, 1, 6, 8]
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": "50",
+      "index": 7,
+      "info": {
+        "name": "Ingeniería en Calidad",
+        "altname": "IeC",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 3,
+        "year": 4,
+        "description": "",
+        "correlativities": {
+          "regularized": [17],
+          "approved": [9, 16]
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": "45",
+      "index": 8,
+      "info": {
+        "name": "Comercialización",
+        "altname": "Com",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 3,
+        "year": 3,
+        "description": "",
+        "correlativities": {
+          "regularized": [9, 16, 11],
+          "approved": [2, 5, 1, 6, 8]
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": "51",
+      "index": 8,
+      "info": {
+        "name": "Mecánica y Mecanismos",
+        "altname": "MyM",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 5,
+        "year": 4,
+        "description": "",
+        "correlativities": {
+          "regularized": [10],
+          "approved": [2, 7, 6]
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    },
+    {
+      "sid": "52",
+      "index": 9,
+      "info": {
+        "name": "Procesos Industriales",
+        "altname": "PPII",
+        "duration": 1,
+        "modality": 0,
+        "weeklyLoad": 5,
+        "year": 4,
+        "description": "",
+        "correlativities": {
+          "regularized": [13, 17, 19, "39"],
+          "approved": [4, 9, 12, 14]
+        }
+      },
+      "personal": {
+        "qualification": 0,
+        "status": 0
+      }
+    }
+  ]
+}
