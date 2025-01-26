@@ -17,6 +17,7 @@ export const useContextMenu = (
     const handleContextMenu = (e: React.MouseEvent, subject: Subject) => {
         e.preventDefault();
         const isLeft = e.clientX < window.innerWidth / 2;
+        const isTop = e.clientY < window.innerHeight / 2;
 
         // Quita los estilos de las correlativas anteriores
         hideCorrelativities(careerData.subjects);
@@ -32,7 +33,7 @@ export const useContextMenu = (
         setContextMenu({
             position: {
                 x: isLeft ? e.clientX : e.clientX - (contextMenuRef.current?.offsetWidth || 0),
-                y: e.clientY,
+                y: isTop ? e.clientY : e.clientY - (contextMenuRef.current?.offsetHeight || 0),
             },
             toggled: true,
             subjectClicked: subject,
