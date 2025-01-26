@@ -27,20 +27,20 @@ const RenderViewSubjects = (subjectArr: Subject[], dictionary: SubjectsDictionar
                 id={`subject-${subject.sid}`}
                 onClick={() => showSubjectInfo(subject.sid)}
                 onContextMenu={(e) => handleOnContextMenu(e, subject)}
-                className="rounded-sm shadow-md bg-slate-50 hover:shadow-lg transform transition-all duration-300 my-4"
+                className="rounded-sm shadow-md bg-slate-50 dark:bg-transparent hover:shadow-lg transform transition-all duration-300 my-4"
             >
                 {/* Título */}
                 <div
-                    className={`text-center py-1 rounded-sm font-semibold text-white px-1 ${
+                    className={`text-center py-1 rounded-sm font-semibold text-white  px-1 ${
                         personal.status === SubjectStatus.Promocionado
-                            ? "bg-green-700" // Promoted
+                            ? "bg-green-700 dark:bg-green-900" // Promoted
                             : personal.status === SubjectStatus.Aprobado
-                            ? "bg-green-600" // Approved
+                            ? "bg-green-600 dark:bg-green-700" // Approved
                             : personal.status === SubjectStatus.Regularizado
-                            ? "bg-yellow-500" // Regularized
+                            ? "bg-yellow-500 dark:bg-yellow-700" // Regularized
                             : canEnroll
-                            ? "bg-indigo-500" // Can Enroll
-                            : "bg-stone-400"  // Default
+                            ? "bg-indigo-500 dark:bg-indigo-700" // Can Enroll
+                            : "bg-stone-400 dark:bg-stone-600"  // Default
                     }`}
                 >
                     <h3 className="text-lg">{info.name}</h3>
@@ -52,29 +52,29 @@ const RenderViewSubjects = (subjectArr: Subject[], dictionary: SubjectsDictionar
                 {/* Detalles adicionales */}
                 <div
                     id={`subject-${subject.sid}-info`}
-                    className="hidden bg-gray-50 p-4 rounded-b-lg"
+                    className="hidden bg-gray-50 dark:bg-slate-700 p-4 rounded-b-lg"
                 >
                     {/* Modalidad */}
                     <div className="mb-2">
-                        <p className="font-medium text-gray-700">
+                        <p className="font-medium text-gray-300">
                             <span className="text-indigo-500">Modalidad:</span> {modality}
                         </p>
                     </div>
 
                     {/* Descripción */}
-                    <div className="mb-2 text-gray-600 text-sm">
+                    <div className="mb-2 text-gray-300 text-sm">
                         <p>{info.description}</p>
                     </div>
 
                     {/* Nota */}
-                    <div className="mb-2 text-gray-600 text-sm">
+                    <div className="mb-2 text-gray-300 text-sm">
                         <p>Nota: {personal.qualification}</p>
                     </div>
 
                     {/* Correlativas */}
                     <div>
-                        <p className="font-medium text-gray-700">Requisitos:</p>
-                        <div className="ml-2 text-xs text-gray-500">
+                        <p className="font-medium text-gray-400">Requisitos:</p>
+                        <div className="ml-2 text-xs text-gray-400">
                             <p>Regularizada: {correlativities.regularized}</p>
                             <p>Aprobada: {correlativities.approved}</p>
                         </div>

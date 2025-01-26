@@ -47,13 +47,13 @@ const CareerViewUpload = ({ onFileUpload }: { onFileUpload: (data: string) => vo
         <div className="flex items-center justify-center p-4">
             <div
                 className={`max-w-lg w-full p-6 rounded-lg border-2 shadow-md transition-all 
-                ${isDragging ? "border-blue-500 bg-blue-50" : "border-dashed border-gray-400 bg-white"}`}
+                ${isDragging ? "border-blue-500 bg-blue-50" : "border-dashed border-gray-400 dark:bg-slate-700 bg-white"}`}
                 onDragOver={handleDragOver}
                 onDragLeave={handleDragLeave}
                 onDrop={handleDrop}
             >
                 {/* Header */}
-                <h2 className="text-3xl font-bold text-indigo-600 mb-4 text-center">
+                <h2 className="text-3xl font-bold text-indigo-600 dark:text-indigo-400 mb-4 text-center">
                     📂 Subir carrera
                 </h2>
 
@@ -77,7 +77,7 @@ const CareerViewUpload = ({ onFileUpload }: { onFileUpload: (data: string) => vo
                         Si no tienes un archivo, ve a{' '}
                         <Link 
                             href="/template" 
-                            className="font-bold text-indigo-600 hover:underline"
+                            className="font-bold text-indigo-600 dark:text-indigo-400 hover:underline"
                         >
                             Plantillas
                         </Link> 

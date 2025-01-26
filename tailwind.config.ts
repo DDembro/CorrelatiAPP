@@ -24,4 +24,5 @@ export default {
     "border-emerald-800",
     "border-black"
   ],
+  darkMode:"class"
 } satisfies Config;

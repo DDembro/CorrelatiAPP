@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import '../../styles/header.css';
+import ThemeSwitch from './ThemeSwitch';
 
 const Header = () => {
     return (
@@ -27,6 +28,7 @@ const Header = () => {
                     <Link href="/about" className='navbar-link'>
                         Sobre La App
                     </Link>
+                    <ThemeSwitch/>
                 </div>
             </div>
         </nav>

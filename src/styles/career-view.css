@@ -1,5 +1,5 @@
 .view-container {
-    @apply p-4 flex flex-row items-center bg-gray-100 rounded-lg shadow-md text-white
+    @apply p-4 flex flex-row items-center bg-gray-100 rounded-lg shadow-md text-white dark:bg-slate-700
 }
 
 .option-button {
@@ -7,7 +7,7 @@
 }
 
 .label {
-    @apply mx-6 text-xl font-semibold text-gray-700
+    @apply mx-6 text-xl font-semibold text-gray-700 dark:text-gray-300
 }
 
 .edit-warning {
@@ -16,15 +16,18 @@
 
 @media (max-width: 1020px) {
     .view-container {
-        @apply flex-wrap items-start p-3; /* Cambia la disposición a columnas y ajusta el padding */
+        @apply flex-wrap items-start p-3;
+        /* Cambia la disposición a columnas y ajusta el padding */
     }
 
     .option-button {
-        @apply w-1/5 text-center mx-2 my-2; /* Botones más grandes que ocupan todo el ancho */
+        @apply w-1/5 text-center mx-2 my-2
+        /* Botones más grandes que ocupan todo el ancho */
     }
 
     .label {
-        @apply mx-2 mb-4 text-lg ; /* Centra y reduce el tamaño del texto */
+        @apply mx-2 mb-4 text-lg;
+        /* Centra y reduce el tamaño del texto */
     }
 
     .edit-button {

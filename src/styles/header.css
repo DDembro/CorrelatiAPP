@@ -1,5 +1,5 @@
 .navbar {
-    @apply bg-gradient-to-r from-blue-500 to-indigo-500 px-6 py-4 text-white shadow-md sticky top-0 z-50;
+    @apply bg-gradient-to-r from-blue-500 to-indigo-500 dark:from-blue-700 dark:to-indigo-700 px-6 py-4 text-white shadow-md sticky top-0 z-50;
 }
 
 .navbar-container {
@@ -19,7 +19,7 @@
 }
 
 .navbar-link {
-    @apply px-3 py-2 rounded-md text-white hover:bg-indigo-600 transition-colors;
+    @apply px-3 py-2 rounded-md text-white dark:text-slate-300 hover:bg-indigo-600 transition-colors;
 }
 
 @media (max-width: 1024px) {
@@ -31,18 +31,22 @@
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
     .navbar-container {
-        @apply flex-col space-y-4 text-center; /* Apila los elementos */
+        @apply flex-col space-y-4 text-center;
+        /* Apila los elementos */
     }
 
     .navbar-links {
-        @apply flex flex-wrap space-x-0; /* Cambia los enlaces a columna */
+        @apply flex flex-wrap space-x-0;
+        /* Cambia los enlaces a columna */
     }
 
     .navbar-logo-div {
-        @apply mb-2; /* Agrega margen inferior al logo */
+        @apply mb-2;
+        /* Agrega margen inferior al logo */
     }
 
     .navbar-link {
-        @apply text-base; /* Reduce el tamaño de texto para móvil */
+        @apply text-base;
+        /* Reduce el tamaño de texto para móvil */
     }
 }

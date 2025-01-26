@@ -17,7 +17,7 @@ const CareerEditNav: React.FC<CareerEditNavProps> = ({ careerData }) => {
     }
 
     return (
-        <div className="p-4 flex items-center bg-gray-100 rounded-lg shadow-md text-white">
+        <div className="p-4 flex items-center bg-gray-100 rounded-lg shadow-md text-white dark:bg-slate-700">
             <Link
                 href="/career-view"
                 className="bg-blue-500 font-medium px-4 py-2 mx-2 rounded-md shadow hover:bg-blue-700 active:shadow-inner focus:outline-none"
@@ -28,7 +28,7 @@ const CareerEditNav: React.FC<CareerEditNavProps> = ({ careerData }) => {
                 Volver al modo Vista
             </Link>
 
-            <p className="mx-6 text-xl font-semibold text-gray-700 truncate">
+            <p className="mx-6 text-xl font-semibold text-gray-700  dark:text-white truncate">
                 Editando: {careerData.title}
             </p>
 

@@ -42,7 +42,7 @@ const CareerRenderEditTable = (careerData:CareerData, handleOnContextMenu:any) =
                     onDrop={() => handleDrop(yearIndex + 1)}
                 >
                     {/* Header Año */}
-                    <div className="text-center">
+                    <div className="text-center dark:text-gray-300">
                         <strong>Año {yearIndex + 1}</strong>
                     </div>
 
