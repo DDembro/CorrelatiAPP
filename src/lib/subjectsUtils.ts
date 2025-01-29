@@ -141,9 +141,9 @@ export const showCorrelativities = (subjectArr: Subject[], targetSubject: Subjec
 
         if (subj) {
             if (regularizedNeeded.includes(subject.sid)) {
-                subj.classList.add("border-8", "border-amber-700");
+                subj.classList.add("border-8", "border-amber-700", "dark:border-amber-300");
             } else if (approvedNeeded.includes(subject.sid)) {
-                subj.classList.add("border-8", "border-emerald-800");
+                subj.classList.add("border-8", "border-emerald-900", "dark:border-emerald-300");
             }
         }
     });
@@ -154,7 +154,14 @@ export const hideCorrelativities = (subjectArr: Subject[]): void => {
     subjectArr.forEach((subject) => {
         const subj = document.getElementById(`subject-${subject.sid}`);
         if (subj) {
-            subj.classList.remove("border-8", "border-amber-700", "border-emerald-800", "border-black");
+            subj.classList.remove(
+                "border-8",
+                "border-amber-700",
+                "border-emerald-900",
+                "dark:border-amber-300",
+                "dark:border-emerald-300",
+                "border-black"
+            );
         }
     });
 };

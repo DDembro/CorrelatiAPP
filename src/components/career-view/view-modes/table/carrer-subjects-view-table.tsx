@@ -30,7 +30,7 @@ const RenderViewSubjects = (subjectArr: Subject[], dictionary: SubjectsDictionar
                         personal.status === SubjectStatus.Promocionado
                             ? "bg-green-700 dark:bg-green-900" // Promoted
                             : personal.status === SubjectStatus.Aprobado
-                              ? "bg-green-600 dark:bg-green-700" // Approved
+                              ? "bg-green-500 dark:bg-green-700" // Approved
                               : personal.status === SubjectStatus.Regularizado
                                 ? "bg-yellow-500 dark:bg-yellow-700" // Regularized
                                 : canEnroll

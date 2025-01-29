@@ -2,14 +2,12 @@
 
 import React, { useEffect, useState } from "react";
 import CareerViewTable from "@/components/career-view/view-modes/table/career-view-table";
-import ListViewCareer from "@/components/career-view/view-modes/career-view-list";
 import CareerViewNav from "@/components/career-view/career-view-nav";
 import CareerViewUpload from "@/components/career-view/career-view-upload";
 import { CareerData } from "@/types/career-view-types";
 import { getLocalCareerData, isValidCareerData } from "@/lib/careerEditUtils";
 
 const CareerViewPage = () => {
-    const [viewMode, setViewMode] = useState(true); // Tabla o Lista
     const [careerData, setCareerData] = useState<CareerData | null>(null); // Datos cargados
 
     // Maneja la carga inicial del json
@@ -48,9 +46,9 @@ const CareerViewPage = () => {
     // Vista de la carrera cuando se cargan datos
     return (
         <div className="p-2">
-            <CareerViewNav careerData={careerData} viewMode={viewMode} setViewMode={setViewMode} />
+            <CareerViewNav careerData={careerData} />
             <div>
-                {viewMode ? <CareerViewTable careerData={careerData} /> : <ListViewCareer careerData={careerData} />}
+                <CareerViewTable careerData={careerData} />
             </div>
         </div>
     );

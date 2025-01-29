@@ -13,7 +13,7 @@ const colaboradores = [
         github: "https://github.com/nicofishman",
         description: "Bug visual en el context menu",
     },
-]
+];
 
 const AboutPage = () => {
     return (
@@ -87,19 +87,19 @@ const AboutPage = () => {
             <div className="content-container my-6">
                 <h1>Colaboradores</h1>
 
-                <div className='flex'>
+                <div className="flex flex-wrap">
                     {colaboradores.map((colab) => (
                         <div
                             key={colab.name}
                             className="p-4 m-3 bg-indigo-100 dark:bg-slate-800 shadow-lg rounded-lg max-w-xs mx-auto flex flex-col items-start space-y-2"
                         >
-                            <div className="flex items-center w-full">
-                                <p className="text-lg font-semibold">{colab.name}:</p>
+                            <div className="flex flex-wrap items-center w-full">
+                                <p className="text-lg font-semibold mr-2">{colab.name}:</p>
                                 <a
                                     href={colab.github}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="ml-3 font-bold text-indigo-600 dark:text-indigo-400 hover:underline"
+                                    className="font-bold text-indigo-600 dark:text-indigo-400 hover:underline"
                                 >
                                     GitHub
                                 </a>
