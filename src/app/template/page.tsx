@@ -10,7 +10,8 @@ const TemplatePage = () => {
     type CareerTemplateInfo = {
         name: string;
         author: string;
-        date: Date; // Mantén `date` como Date.
+        date: Date;
+        lastUpdate: Date;
         college: string;
         description: string;
         color: string;
@@ -20,7 +21,8 @@ const TemplatePage = () => {
     // Mapea y convierte el JSON en objetos que cumplen con CareerTemplateInfo
     const careers: CareerTemplateInfo[] = careersData.map((career) => ({
         ...career,
-        date: new Date(career.date), // Conviértelo a Date.
+        date: new Date(career.date),
+        lastUpdate: new Date(career.lastUpdate),
     }));
 
     const handleDownload = (fileName: string) => {
@@ -71,8 +73,11 @@ const TemplatePage = () => {
                                         <p className="text-md font-semibold text-slate-300 italic">
                                             Por: {career.author}
                                         </p>
-                                        <p className="text-md font-semibold text-slate-300 italic mb-4">
+                                        <p className="text-md font-semibold text-slate-300 italic">
                                             Subido el: {career.date.toLocaleDateString("es-AR", options)}
+                                        </p>
+                                        <p className="text-md font-semibold text-slate-300 italic mb-4">
+                                            Actualizado el: {career.lastUpdate.toLocaleDateString("es-AR", options)}
                                         </p>
                                         <p className="text-md font-semibold text-slate-200 leading-relaxed mb-6">
                                             {career.description}
