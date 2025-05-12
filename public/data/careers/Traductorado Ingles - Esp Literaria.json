@@ -1,0 +1,975 @@
+{
+    "title": "Traductorado Inglés - Esp. Literaria",
+    "author": "Nicolas Dembrowky",
+    "years": 4,
+    "creationDate": "2025-01-15T12:00:00.000Z",
+    "lastUpdateDate": "2025-05-12T04:12:00.034Z",
+    "subjects": [
+        {
+            "sid": 1,
+            "index": 0,
+            "info": {
+                "name": "Lengua Inglesa I",
+                "altname": "LI1",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 1,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "11",
+            "index": 0,
+            "info": {
+                "name": "Lengua Inglesa III",
+                "altname": "LI3",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 2,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["2", "6", "7"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "24",
+            "index": 0,
+            "info": {
+                "name": "Lengua Inglesa V",
+                "altname": "LI5",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 3,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["17", "8", "12"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "46",
+            "index": 0,
+            "info": {
+                "name": "Lengua Inglesa Especializada TLA",
+                "altname": "LI-TLA",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 4,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["29"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "2",
+            "index": 1,
+            "info": {
+                "name": "Fonética I",
+                "altname": "Fone1",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 1,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "12",
+            "index": 1,
+            "info": {
+                "name": "Gramática II",
+                "altname": "Gra2",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 2,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["6", "7"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "25",
+            "index": 1,
+            "info": {
+                "name": "Lingüística Aplicada a la Traducción",
+                "altname": "LAT",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 3,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["12", "17", "13"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "47",
+            "index": 1,
+            "info": {
+                "name": "Subtitulado",
+                "altname": "Sub",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 4,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["29", "8", "14"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "4",
+            "index": 2,
+            "info": {
+                "name": "Lengua española I",
+                "altname": "LE1",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 1,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "13",
+            "index": 2,
+            "info": {
+                "name": "Lengua Española II",
+                "altname": "LE2",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 2,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["4"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "26",
+            "index": 2,
+            "info": {
+                "name": "Estudios Comparativos del Ingles y el Español",
+                "altname": "ECIyE",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 3,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["12", "17", "13"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "36",
+            "index": 2,
+            "info": {
+                "name": "Fonética III",
+                "altname": "Fone3",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 4,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["8"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "3",
+            "index": 3,
+            "info": {
+                "name": "Fundamentos de la Traducción",
+                "altname": "FdT",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 1,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "14",
+            "index": 3,
+            "info": {
+                "name": "Traducción II",
+                "altname": "Tra2",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 2,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["10", "6", "7", "4"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "27",
+            "index": 3,
+            "info": {
+                "name": "Traducción Periodística",
+                "altname": "TraP",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 3,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["14", "12", "5", "11", "19"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "55",
+            "index": 3,
+            "info": {
+                "name": "Reescritura de Textos Literarios en Español",
+                "altname": "RdTLE",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 4,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["19", "18", "16"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "5",
+            "index": 4,
+            "info": {
+                "name": "Introducción a los Estudios Culturales",
+                "altname": "IaEC",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 1,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "15",
+            "index": 4,
+            "info": {
+                "name": "Elementos de terminología y documentación",
+                "altname": "ETyD",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 2,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["3"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "28",
+            "index": 4,
+            "info": {
+                "name": "Introducción a la Traducción Literaria ",
+                "altname": "InTraL",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 3,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["14", "17", "19", "16", "5", "20"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "51",
+            "index": 4,
+            "info": {
+                "name": "Traducción Literaria I",
+                "altname": "TraL1",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 4,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["28", "33"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "6",
+            "index": 5,
+            "info": {
+                "name": "Lengua Inglesa II",
+                "altname": "LI2",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 1,
+                "description": "",
+                "correlativities": {
+                    "regularized": [1],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "16",
+            "index": 5,
+            "info": {
+                "name": "Introducción a los Estudios Literarios",
+                "altname": "IaEL",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 2,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "29",
+            "index": 5,
+            "info": {
+                "name": "Lengua Inglesa VI",
+                "altname": "LI6",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 3,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["24", "18"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "50",
+            "index": 5,
+            "info": {
+                "name": "Literatura Contemporánea de los EEUU",
+                "altname": "LC-EEUU",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 4,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["29", "20"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "7",
+            "index": 6,
+            "info": {
+                "name": "Gramatica I",
+                "altname": "Gra1",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 1,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "17",
+            "index": 6,
+            "info": {
+                "name": "Lengua Inglesa IV",
+                "altname": "LI4",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 2,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["11"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "30",
+            "index": 6,
+            "info": {
+                "name": "Historia y Cultura Contemporánea del Reino Unido",
+                "altname": "HyCC-RU",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 3,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["6", "5"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "49",
+            "index": 6,
+            "info": {
+                "name": "Textos Hispanoamericanos Contemporáneos",
+                "altname": "THC",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 4,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["16"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "8",
+            "index": 7,
+            "info": {
+                "name": "Fonetica II",
+                "altname": "Fone2",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 1,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["2", 1],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "18",
+            "index": 7,
+            "info": {
+                "name": "Analisis del Discurso",
+                "altname": "AdD",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 2,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["6", "7", "13"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "31",
+            "index": 7,
+            "info": {
+                "name": "Introducción a la Traducción Cientifica",
+                "altname": "InTraC",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 3,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["14", "17", "19", "15", "18"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "48",
+            "index": 7,
+            "info": {
+                "name": "Traducción Literaria II",
+                "altname": "TraL2",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 4,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["51", "55"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "9",
+            "index": 8,
+            "info": {
+                "name": "Heramientas informaticas ",
+                "altname": "HerInf",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 1,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "19",
+            "index": 8,
+            "info": {
+                "name": "Redacción en Español ",
+                "altname": "RE",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 2,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["13"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "32",
+            "index": 8,
+            "info": {
+                "name": "Traducción Inversa",
+                "altname": "TraInv",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 3,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["14", "24", "18", "26"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "56",
+            "index": 8,
+            "info": {
+                "name": "Literatura Postcolonial y de Minorías",
+                "altname": "LPyM",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 4,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["16", "20"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "10",
+            "index": 9,
+            "info": {
+                "name": "Traducción I",
+                "altname": "Tra1",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 1,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["3"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "20",
+            "index": 9,
+            "info": {
+                "name": "Panorama de la Literatura de los Pueblos de Habla Inglesa",
+                "altname": "PLPHI",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 2,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["6", "16"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "33",
+            "index": 9,
+            "info": {
+                "name": "Movimientos Literarios del Siglo XX",
+                "altname": "MLSigXX",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 3,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["20"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "57",
+            "index": 9,
+            "info": {
+                "name": "Medios de Comunicación e Industrias Culturales",
+                "altname": "MdCeIC",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 4,
+                "description": "",
+                "correlativities": {
+                    "regularized": [],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "21",
+            "index": 10,
+            "info": {
+                "name": "Introducción a la Traducción Técnica",
+                "altname": "IaTT",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 2,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["14", "15", "9"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "34",
+            "index": 10,
+            "info": {
+                "name": "Introducción a la Interpretación",
+                "altname": "Interp",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 3,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["14", "17", "18", "5", "8"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "58",
+            "index": 10,
+            "info": {
+                "name": "Historia Social del Mundo Contemporáneo",
+                "altname": "HSdMC",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 4,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["22", "30", "24", "20"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "22",
+            "index": 11,
+            "info": {
+                "name": "Historia y Cultura Contemporánea de EEUU",
+                "altname": "HyCC-EEUU",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 2,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["6", "5"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "59",
+            "index": 11,
+            "info": {
+                "name": "Doblaje y Transcripción",
+                "altname": "DyT",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 4,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["8", "28", "31", "29"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        },
+        {
+            "sid": "60",
+            "index": 12,
+            "info": {
+                "name": "Estudios de Traducción",
+                "altname": "EdTra",
+                "duration": 0,
+                "modality": 0,
+                "weeklyLoad": 4,
+                "year": 4,
+                "description": "",
+                "correlativities": {
+                    "regularized": ["10"],
+                    "approved": []
+                }
+            },
+            "personal": {
+                "qualification": 0,
+                "status": 0
+            }
+        }
+    ]
+}

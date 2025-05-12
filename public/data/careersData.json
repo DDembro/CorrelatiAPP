@@ -38,5 +38,15 @@
         "description": "Plan estudio de 5 años.",
         "color": "bg-red-600",
         "file": "Ciencias de la Computación.json"
+    },
+    {
+        "name": "Traductorado Inglés - Esp. Literaria",
+        "author": "Nicolas Dembrowky",
+        "date": "2025-05-12T12:00:00.000Z",
+        "lastUpdate": "2025-05-12T12:00:00.000Z",
+        "college": "Lenguas Vivas",
+        "description": "Especialización en Traducción Literaria y Medios Audiovisuales.",
+        "color": "bg-emerald-600",
+        "file": "Traductorado Ingles - Esp Literaria.json"
     }
 ]

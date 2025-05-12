@@ -17,7 +17,7 @@ export default {
     plugins: [],
     safelist: [
         {
-            pattern: /bg-(red|green|blue|amber|yellow|pink|violet|teal)-(300|400|500|600|700|800|900)/,
+            pattern: /bg-(red|green|blue|amber|yellow|pink|violet|teal|emerald)-(300|400|500|600|700|800|900)/,
         },
         "border-8",
         "border-amber-700",
